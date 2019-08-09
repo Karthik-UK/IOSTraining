@@ -10,10 +10,38 @@ import UIKit
 
 class SecondVC: UIViewController {
 
+    
+   
+    @IBOutlet weak var tempLabel: UILabel!
+    
+    
+    @IBOutlet weak var view1: UIView!
+    
+   
+    
+ 
+    
+    
     @IBAction func Button1(_ sender: Any) {
     }
+
+    @objc func actionTapped(_ sender: UITapGestureRecognizer) {
+        
+        view1.backgroundColor = UIColor.black
+        
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        tempLabel?.text = "Label"
+        let tapAction = UITapGestureRecognizer(target: self, action: #selector(self.actionTapped(_:)))
+        tempLabel?.isUserInteractionEnabled = true
+        tempLabel?.addGestureRecognizer(tapAction)
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }
