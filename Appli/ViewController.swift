@@ -10,22 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var Label1: UILabel!
-   
-    @IBOutlet weak var Image1: UIImageView!
-    
-    
-    @IBOutlet weak var Label2: UILabel!
-    
-    
-    @IBOutlet weak var Text1: UITextField!
+
+    @IBOutlet weak var title1: UILabel!
     
  
-    @IBAction func Button1(_ sender: Any) {
-    }
     
+    @IBOutlet weak var image1: UIImageView!
+    
+
+    
+    @IBOutlet weak var Title2: UILabel!
+    
+
+    @IBOutlet weak var Text1: UITextField!
+    
+  
+    @IBAction func onClick(_ sender: Any) {
+        
+       
+        
+    }
     override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
