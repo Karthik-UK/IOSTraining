@@ -13,6 +13,7 @@
 		8F03426D22FC55B1000DA802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F03426B22FC55B1000DA802 /* Main.storyboard */; };
 		8F03426F22FC55B1000DA802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F03426E22FC55B1000DA802 /* Assets.xcassets */; };
 		8F03427222FC55B1000DA802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F03427022FC55B1000DA802 /* LaunchScreen.storyboard */; };
+		8F05DE5E22FEAA0100215849 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F05DE5D22FEAA0100215849 /* ThirdVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8F03426E22FC55B1000DA802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F03427122FC55B1000DA802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F03427322FC55B1000DA802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F05DE5D22FEAA0100215849 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8F03427022FC55B1000DA802 /* LaunchScreen.storyboard */,
 				8F03427322FC55B1000DA802 /* Info.plist */,
 				8F013DF522FD606E00B85D63 /* SecondVC.swift */,
+				8F05DE5D22FEAA0100215849 /* ThirdVC.swift */,
 			);
 			path = Appli;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F05DE5E22FEAA0100215849 /* ThirdVC.swift in Sources */,
 				8F03426A22FC55B1000DA802 /* ViewController.swift in Sources */,
 				8F013DF622FD606E00B85D63 /* SecondVC.swift in Sources */,
 				8F03426822FC55B1000DA802 /* AppDelegate.swift in Sources */,
