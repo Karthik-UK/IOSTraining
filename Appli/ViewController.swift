@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
 
     @IBOutlet weak var title1: UILabel!
@@ -32,17 +32,28 @@ class ViewController: UIViewController {
         self.present(transitionToVC, animated: true, completion: nil)
     }
     
-    
-    
+    func textFieldShouldReturn(_ Text1 : UITextField) -> Bool
+    {
+        print("Inside return")
+        Text1.resignFirstResponder()
+        
+        return true
+    }
     override func viewDidLoad() {
     super.viewDidLoad()
         
         
         image1.layer.cornerRadius = 30
         
+        title1.center.x = self.view.frame.maxX/2
+        image1.center.x = self.view.frame.maxX/2
+        Title2?.center.x = self.view.frame.maxX/2
+        Text1.center.x = self.view.frame.maxX/2
+        buttonOutlet.center.x = self.view.frame.maxX/2
+        button2.center.x = self.view.frame.maxX/2
         
         
-        // Do any additional setup after loading the view.
+        
         title1.translatesAutoresizingMaskIntoConstraints = false
         title1.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         //title1.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
@@ -59,11 +70,11 @@ class ViewController: UIViewController {
         image1.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
       
-        Title2.translatesAutoresizingMaskIntoConstraints = false
-        Title2.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        Title2?.translatesAutoresizingMaskIntoConstraints = false
+        Title2?.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         //Title2.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        Title2.topAnchor.constraint(equalTo: view.topAnchor, constant: 300).isActive = true
-        Title2.widthAnchor.constraint(equalToConstant: 80).isActive = true
+        Title2?.topAnchor.constraint(equalTo: view.topAnchor, constant: 300).isActive = true
+        Title2?.widthAnchor.constraint(equalToConstant: 80).isActive = true
         Title2.heightAnchor.constraint(equalToConstant: 80).isActive = true
         
         
@@ -91,12 +102,13 @@ class ViewController: UIViewController {
         button2.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
         
+        self.Text1.delegate = self
         
-        
-        
-        
+     
         
     }
+    
+    
 
 
 }
