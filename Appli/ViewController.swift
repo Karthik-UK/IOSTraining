@@ -12,28 +12,28 @@ class ViewController: UIViewController {
 
 
     @IBOutlet weak var title1: UILabel!
-    
- 
-    
+    var Name :String?
     @IBOutlet weak var image1: UIImageView!
-    
-
     @IBOutlet weak var buttonOutlet: UIButton!
-    
-   
-    
     @IBOutlet weak var Title2: UILabel!
-    
-
     @IBOutlet weak var Text1: UITextField!
-    
     @IBOutlet weak var button2: UIButton!
-    
     @IBAction func onClick(_ sender: Any) {
         
        
-        
+    
     }
+    
+    @IBAction func onClick2(_ sender: Any) {
+        let Name = Text1.text ?? "None"
+        let transitionToVC = self.storyboard?.instantiateViewController(withIdentifier: "thirdid") as! ThirdVC
+        transitionToVC.name1 = Name
+        transitionToVC.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
+        self.present(transitionToVC, animated: true, completion: nil)
+    }
+    
+    
+    
     override func viewDidLoad() {
     super.viewDidLoad()
         

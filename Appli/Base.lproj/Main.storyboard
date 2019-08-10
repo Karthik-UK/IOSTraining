@@ -76,7 +76,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="jNA-L6-zrt" kind="presentation" id="Oni-qg-Yr7"/>
+                                    <action selector="onClick2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HCQ-ye-gpR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -100,15 +100,15 @@
         <!--ThirdVC-->
         <scene sceneID="PSO-fE-t4p">
             <objects>
-                <viewController id="jNA-L6-zrt" customClass="ThirdVC" customModule="Appli" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="thirdid" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jNA-L6-zrt" customClass="ThirdVC" customModule="Appli" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0dL-cM-gVZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaR-s3-Hx5">
-                                <rect key="frame" x="16" y="90" width="42" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaR-s3-Hx5">
+                                <rect key="frame" x="48" y="97" width="278" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsM-mN-D2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="888"/>
+            <point key="canvasLocation" x="128.80000000000001" y="887.40629685157433"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="gW3-Au-Gzn">
