@@ -19,9 +19,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var Text1: UITextField!
     @IBOutlet weak var button2: UIButton!
     @IBAction func onClick(_ sender: Any) {
-        
-       
-    
     }
     
     @IBAction func onClick2(_ sender: Any) {

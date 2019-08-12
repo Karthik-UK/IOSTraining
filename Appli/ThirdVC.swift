@@ -10,12 +10,8 @@ import UIKit
 
 class ThirdVC: UIViewController {
 
-    
     @IBOutlet weak var nameLabel: UILabel!
     var name1 :String = " "
-    
-    
-    
     @objc func buttonClicked() {
         dismiss(animated: true, completion: nil)
     }
@@ -28,7 +24,6 @@ class ThirdVC: UIViewController {
         button.setTitle("GO-BACK", for: .normal)
         button.addTarget(self, action:#selector(self.buttonClicked), for: .touchUpInside)
         self.view.addSubview(button)
-        
         //button.translatesAutoresizingMaskIntoConstraints = false
         //button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         //button.topAnchor.constraint(equalTo: view.topAnchor, constant: 500).isActive = true
@@ -38,9 +33,7 @@ class ThirdVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-     
         super.viewWillAppear(animated)
-       
         if name1 == ""
         {
 //            print("No Name Entered")
@@ -57,7 +50,7 @@ class ThirdVC: UIViewController {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 1, animations: {
             self.nameLabel.center.y += 200
-
+            self.nameLabel.center.x += 80
         })
     }
 

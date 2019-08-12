@@ -13,17 +13,12 @@ class SecondVC: UIViewController {
     
    
     @IBOutlet weak var tempLabel: UILabel!
-    
-    
     @IBOutlet weak var viewToChange: UIView!
     
-   
-
     @IBAction func onCloseBttn(_ sender: Any) {
     dismiss(animated: true, completion: nil)
     }
     
- 
     @objc func actionTapped(_ sender: UITapGestureRecognizer) {
         viewToChange.backgroundColor = randomcolour()    }
     
@@ -32,22 +27,13 @@ class SecondVC: UIViewController {
         let red = CGFloat(drand48())
         let blue = CGFloat(drand48())
         let green = CGFloat(drand48())
-        
         return UIColor(red: red, green: green, blue: blue, alpha: 1)}
-    
-        
-
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let tap = UITapGestureRecognizer(target: self, action: Selector(("actionTapped:")))
         tempLabel.addGestureRecognizer(tap)
-        
-        
-
-        // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view.
     }
     
 
