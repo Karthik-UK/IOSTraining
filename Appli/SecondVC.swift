@@ -1,10 +1,3 @@
-//
-//  SecondVC.swift
-//  Appli
-//
-//  Created by Karthik UK on 09/08/19.
-//  Copyright © 2019 Karthik UK. All rights reserved.
-//
 
 import UIKit
 
@@ -16,12 +9,26 @@ class SecondVC: UIViewController {
     @IBOutlet weak var viewToChange: UIView!
     
     @IBAction func onCloseBttn(_ sender: Any) {
-    dismiss(animated: true, completion: nil)
+        NotificationCenter.default.removeObserver(self)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+       
+        super.viewDidDisappear(animated)
+        print("disappear")
+    }
+    
+    @objc func willResignActive(_ notification: Notification) {
+        view.backgroundColor = UIColor.orange
+        tempLabel.text = "ColouredBack"
+        
     }
     
     @objc func actionTapped(_ sender: UITapGestureRecognizer) {
-        viewToChange.backgroundColor = randomcolour()    }
-    
+        viewToChange.backgroundColor = randomcolour()
+        
+    }
     
     func randomcolour()->UIColor{
         let red = CGFloat(drand48())
@@ -31,20 +38,21 @@ class SecondVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let tap = UITapGestureRecognizer(target: self, action: Selector(("actionTapped:")))
         tempLabel.addGestureRecognizer(tap)
-    // Do any additional setup after loading the view.
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIApplication.willResignActiveNotification, object: nil)
+        
+        NotificationCenter.default
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    deinit {
+        print("\(self)")
     }
-    */
 
-}
+    
+    
+    }
+   
+

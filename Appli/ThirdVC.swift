@@ -19,16 +19,12 @@ class ThirdVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.yellow
-        let button:UIButton = UIButton(frame: CGRect(x: 150, y: 400, width: 100, height: 100))
+        let button:UIButton = UIButton(frame: CGRect(x: 150, y: 600, width: 100, height: 100))
         button.backgroundColor = .black
         button.setTitle("GO-BACK", for: .normal)
         button.addTarget(self, action:#selector(self.buttonClicked), for: .touchUpInside)
         self.view.addSubview(button)
-        //button.translatesAutoresizingMaskIntoConstraints = false
-        //button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        //button.topAnchor.constraint(equalTo: view.topAnchor, constant: 500).isActive = true
-        //button.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        //button.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        
         button.layer.cornerRadius = 30
     }
     
@@ -39,18 +35,16 @@ class ThirdVC: UIViewController {
 //            print("No Name Entered")
             nameLabel?.text = "PLEASE ENTER SOMETHING"
         }
-        else
-        {
+        else {
                nameLabel?.text = name1
-               
-        }
+               }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 1, animations: {
-            self.nameLabel.center.y += 200
-            self.nameLabel.center.x += 80
+            self.nameLabel.center.y = self.view.center.y
+            
         })
     }
 
