@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITextFieldDelegate {
+class ViewController: UIViewController,UITextFieldDelegate,UIAlertViewDelegate{
 
 
     @IBOutlet weak var title1: UILabel!
@@ -36,14 +36,31 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         return true
     }
+    
+    
+    @objc func alpha(){
+        let nameValue = Text1.text!
+        do {
+            let regex = try NSRegularExpression(pattern: ".*[^A-Za-z ].*", options: [])
+            if regex.firstMatch(in: nameValue, options: [], range: NSMakeRange(0, nameValue.count)) != nil {
+                let correctedName = String(nameValue[..<nameValue.index(before: nameValue.endIndex)])
+                print("Corrected : \(correctedName)")
+                Text1.text = correctedName            }
+        }
+        catch {
+            
+        }
+    }
+    
+    
     override func viewDidLoad() {
     super.viewDidLoad()
-        
         
         image1.layer.cornerRadius = 30
 
         title1.center.x = self.view.frame.maxX/2
         title1.center.y = self.view.frame.maxY - self.view.frame.maxY*(6/7)
+        
 
 
         image1.center.x = self.view.frame.maxX/2
@@ -51,11 +68,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
 
 
-        Title2?.center.x = self.view.frame.maxX/2
-        Title2?.center.y = self.view.frame.maxY - self.view.frame.maxY*(0.55)
-
-        Text1.center.x = self.view.frame.maxX/2
-        Text1.center.y = self.view.frame.maxY -  self.view.frame.maxY*(0.45)
+        Title2?.center.x = self.view.bounds.maxX/2
+        Title2?.center.y = self.view.bounds.maxY - self.view.bounds.maxY*(0.55)
+        Text1.center.x = self.view.bounds.maxX/2
+        Text1.center.y = self.view.bounds.maxY -  self.view.bounds.maxY*(0.45)
 
         buttonOutlet.center.x = self.view.frame.maxX/2
         buttonOutlet.center.y = self.view.frame.maxY - self.view.frame.maxY*(0.30)
@@ -64,7 +80,20 @@ class ViewController: UIViewController,UITextFieldDelegate {
         button2.center.x = self.view.frame.maxX/2
         button2.center.y = self.view.frame.maxY - self.view.frame.maxY*(0.20)
         
+      
+        var screenWidth: CGFloat {
+            return UIScreen.main.bounds.width
+        }
+        print(screenWidth)
+        print(self.view.frame.maxX)
         
+        
+        var screenHeight: CGFloat {
+            return UIScreen.main.bounds.height
+        }
+        
+    
+        NotificationCenter.default.addObserver(self,selector: #selector(alpha), name: UITextField.textDidChangeNotification, object: nil)
         
         
         //title1.translatesAutoresizingMaskIntoConstraints = false

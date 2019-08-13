@@ -38,13 +38,19 @@ class SecondVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        tempLabel.center.x = self.view.frame.maxX/2
+//        tempLabel.center.y = self.view.frame.maxY - self.view.frame.maxY*(0.5)
+//
+//        viewToChange.center.x = self.view.frame.maxX/2
+//        viewToChange?.center.y = self.view.frame.maxY - self.view.frame.maxY*(0.5)
+//
         
         let tap = UITapGestureRecognizer(target: self, action: Selector(("actionTapped:")))
         tempLabel.addGestureRecognizer(tap)
         
         NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIApplication.willResignActiveNotification, object: nil)
         
-        NotificationCenter.default
+       
     }
     
     deinit {
