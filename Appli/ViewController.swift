@@ -27,6 +27,8 @@ class ViewController: UIViewController,UITextFieldDelegate,UIAlertViewDelegate{
         transitionToVC.name1 = Name
         transitionToVC.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
         self.present(transitionToVC, animated: true, completion: nil)
+        
+        
     }
     
     func textFieldShouldReturn(_ Text1 : UITextField) -> Bool
@@ -38,19 +40,31 @@ class ViewController: UIViewController,UITextFieldDelegate,UIAlertViewDelegate{
     }
     
     
-    @objc func alpha(){
-        let nameValue = Text1.text!
-        do {
-            let regex = try NSRegularExpression(pattern: ".*[^A-Za-z ].*", options: [])
-            if regex.firstMatch(in: nameValue, options: [], range: NSMakeRange(0, nameValue.count)) != nil {
-                let correctedName = String(nameValue[..<nameValue.index(before: nameValue.endIndex)])
-                print("Corrected : \(correctedName)")
-                Text1.text = correctedName            }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print(string)
+        //print(CharacterSet.letters.debugDescription)
+        if string.rangeOfCharacter(from: CharacterSet.letters) != nil || string == ""
+        {
+            return true
         }
-        catch {
-            
-        }
+        return false
     }
+    
+    
+//    @objc func alpha(){
+//        let nameValue = Text1.text!
+//        do {
+//            let regex = try NSRegularExpression(pattern: ".*[^A-Za-z ].*", options: [])
+//            if regex.firstMatch(in: nameValue, options: [], range: NSMakeRange(0, nameValue.count)) != nil {
+//                let correctedName = String(nameValue[..<nameValue.index(before: nameValue.endIndex)])
+//                print("Corrected : \(correctedName)")
+//                Text1.text = correctedName            }
+//        }
+//        catch {
+//
+//        }
+//    }
     
     
     override func viewDidLoad() {
@@ -93,7 +107,10 @@ class ViewController: UIViewController,UITextFieldDelegate,UIAlertViewDelegate{
         }
         
     
-        NotificationCenter.default.addObserver(self,selector: #selector(alpha), name: UITextField.textDidChangeNotification, object: nil)
+//        NotificationCenter.default.addObserver(self,selector: #selector(alpha), name: UITextField.textDidChangeNotification, object: nil)
+        
+       
+        
         
         
         //title1.translatesAutoresizingMaskIntoConstraints = false
