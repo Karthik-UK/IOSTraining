@@ -76,7 +76,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vnd-47-E6M"/>
-                                    <segue destination="BmW-m8-ldI" kind="show" id="bt9-2u-YYK"/>
+                                    <segue destination="BmW-m8-ldI" kind="push" id="h7V-kB-bLz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -169,7 +169,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wf2-ea-Gnc">
-                                <rect key="frame" x="155" y="543" width="88" height="88"/>
+                                <rect key="frame" x="155" y="499" width="88" height="88"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="bfw-bK-w2f"/>
@@ -221,6 +221,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="5ti-e2-P7Y"/>
                     <connections>
                         <outlet property="tempLabel" destination="RGQ-78-vta" id="GBf-t6-DdT"/>
                         <outlet property="viewToChange" destination="vlW-FY-xht" id="Aem-sd-ocT"/>
@@ -235,6 +236,7 @@
         <image name="images" width="150" height="84"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hwa-a3-cMU"/>
+        <segue reference="h7V-kB-bLz"/>
+        <segue reference="9Yw-QK-nQi"/>
     </inferredMetricsTieBreakers>
 </document>

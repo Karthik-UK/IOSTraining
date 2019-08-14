@@ -20,7 +20,7 @@ class SecondVC: UIViewController {
     }
     
     @objc func willResignActive(_ notification: Notification) {
-        view.backgroundColor = UIColor.orange
+        view.backgroundColor = randomcolour()
         tempLabel.text = "ColouredBack"
         
     }

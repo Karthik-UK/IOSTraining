@@ -30,7 +30,6 @@ class ViewController: UIViewController,UITextFieldDelegate,UIAlertViewDelegate{
         
         
     }
-    
     func textFieldShouldReturn(_ Text1 : UITextField) -> Bool
     {
         print("Inside return")
@@ -43,7 +42,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UIAlertViewDelegate{
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         print(string)
-        //print(CharacterSet.letters.debugDescription)
+        
         if string.rangeOfCharacter(from: CharacterSet.letters) != nil || string == ""
         {
             return true
