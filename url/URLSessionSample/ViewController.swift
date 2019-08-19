@@ -8,18 +8,9 @@ class ViewController: UIViewController, URLSessionDelegate,URLSessionTaskDelegat
     @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
-        
-        
-        super.viewDidLoad()
-        // Part1Session
-        
+    super.viewDidLoad()   
     }
-   
-    
-            
-    
-    
-    
+  
     @IBOutlet weak var textEntry: UITextField!
     
     

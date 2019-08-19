@@ -71,11 +71,19 @@
                                     <action selector="dissmissButton:" destination="Cce-k9-sKL" eventType="touchUpInside" id="mMk-ig-33x"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ta-Mi-MYr">
+                                <rect key="frame" x="80" y="621" width="218" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IJv-6h-yDt"/>
                     </view>
                     <connections>
+                        <outlet property="mainLabel" destination="6ta-Mi-MYr" id="hRd-ng-jnX"/>
                         <outlet property="tableView" destination="hNu-Wd-pxv" id="5W9-d8-DJP"/>
                     </connections>
                 </viewController>

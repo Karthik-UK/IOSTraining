@@ -10,7 +10,9 @@ import UIKit
 
 class SecondViewController: UIViewController , UITableViewDataSource,UITableViewDelegate{
     
+    @IBOutlet weak var mainLabel: UILabel!
     var label : String?
+    
     @IBAction func dissmissButton(_ sender: Any) {
       dismiss(animated: true, completion: nil)
     }
@@ -25,10 +27,11 @@ class SecondViewController: UIViewController , UITableViewDataSource,UITableView
         return cell
     }
     
+  
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(label)
         tableView.delegate = self
         tableView.dataSource = self
     }
