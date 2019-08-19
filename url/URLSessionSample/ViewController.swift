@@ -15,49 +15,35 @@ class ViewController: UIViewController, URLSessionDelegate,URLSessionTaskDelegat
         
     }
    
+    
+            
+    
+    
+    
     @IBOutlet weak var textEntry: UITextField!
     
     
     struct Root: Codable {
-       // let metadata: Metadata
         let results: [Result]
     }
-    //struct Metadata: Codable {
-    //    let provider: String
-    //}
     struct Result: Codable {
-        //let id: String
-        //let language: String
         let lexicalEntries: [Lexical]
     }
     struct Lexical: Codable {
         let entries: [Entry]
     }
     struct Entry: Codable {
-        //let etymologies: [String]?
-       // let grammaticalFeatures: [Feature]
-        //let homographNumber: String
         let senses: [Sense]
     }
-//    struct Feature: Codable {
-//        let text: String
-//        let type: String
-//    }
     struct Sense: Codable {
         let definitions: [String]
-       // let domains: [String]?
-        //let examples: [Example]
-       // let id: String
-        //let short_definitions: [String]
     }
-//    struct Example: Codable {
-//        let registers: [String]?
-//        let text: String
-//    }
-//
+
 
     @IBAction func whenPressed(_ sender: Any) {
         startload()    }
+    
+    
     func startload(){
     let appId = "3368cc95"
     let appKey = "16e1ca0ca3acd9e646f78be4a5279d16"
@@ -83,6 +69,16 @@ class ViewController: UIViewController, URLSessionDelegate,URLSessionTaskDelegat
                         for sense in entry.senses {
                             for definition in sense.definitions {
                                 print(definition)
+                                func prepare(for segue: UIStoryboardSegue, sender: Any?)
+                                {
+                                     if let vc = segue.destination as? SecondViewController
+                                    {
+                                        vc.label = definition
+                                    }
+                                }
+                                
+                                
+                                
                             }
                         }
                     }

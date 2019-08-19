@@ -14,6 +14,7 @@
 		66FDFD1C230579F1003F62D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FDFD1A230579F1003F62D7 /* LaunchScreen.storyboard */; };
 		66FDFD27230579F1003F62D7 /* URLSessionSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FDFD26230579F1003F62D7 /* URLSessionSampleTests.swift */; };
 		66FDFD32230579F2003F62D7 /* URLSessionSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FDFD31230579F2003F62D7 /* URLSessionSampleUITests.swift */; };
+		8F0B6D83230AAB3D0053C0F2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B6D82230AAB3D0053C0F2 /* SecondViewController.swift */; };
 		8F9DE7032306AE0800F59154 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9DE7022306AE0800F59154 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		66FDFD2D230579F2003F62D7 /* URLSessionSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLSessionSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FDFD31230579F2003F62D7 /* URLSessionSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionSampleUITests.swift; sourceTree = "<group>"; };
 		66FDFD33230579F2003F62D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F0B6D82230AAB3D0053C0F2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8F9DE7022306AE0800F59154 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 				66FDFD18230579F1003F62D7 /* Assets.xcassets */,
 				66FDFD1A230579F1003F62D7 /* LaunchScreen.storyboard */,
 				66FDFD1D230579F1003F62D7 /* Info.plist */,
+				8F0B6D82230AAB3D0053C0F2 /* SecondViewController.swift */,
 			);
 			path = URLSessionSample;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0B6D83230AAB3D0053C0F2 /* SecondViewController.swift in Sources */,
 				66FDFD14230579EF003F62D7 /* ViewController.swift in Sources */,
 				66FDFD12230579EF003F62D7 /* AppDelegate.swift in Sources */,
 			);
