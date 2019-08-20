@@ -19,7 +19,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as? CollectionViewCell
         
-        cell?.myLabel?.text = self.items[indexPath.item]
+        cell?.labelTitle?.text = self.items[indexPath.item]
         cell?.backgroundColor = UIColor.blue
         
         return cell!

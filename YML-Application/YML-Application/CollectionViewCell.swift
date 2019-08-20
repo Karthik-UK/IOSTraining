@@ -2,6 +2,7 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var myLabel :UILabel?
+    @IBOutlet weak var labelTitle: UILabel!
+    
 }
 
