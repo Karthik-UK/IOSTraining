@@ -125,10 +125,18 @@
                                     <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ke8-Uc-pur"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="jMk-6n-72O">
+                                <rect key="frame" x="187.5" y="639" width="39" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="xot-6L-kQP"/>
+                                </constraints>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="jMk-6n-72O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4oj-bR-3K0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DCz-qw-mMV" secondAttribute="bottom" constant="40" id="8S0-XS-TsY"/>
+                            <constraint firstItem="DCz-qw-mMV" firstAttribute="top" secondItem="jMk-6n-72O" secondAttribute="bottom" constant="96" id="BQJ-Pz-sth"/>
                             <constraint firstItem="AT1-q6-5aa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXG-Y9-hy6"/>
                             <constraint firstItem="95h-YR-HxT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DVk-sb-weQ"/>
                             <constraint firstItem="DCz-qw-mMV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="GsS-Dv-aP8"/>
@@ -144,6 +152,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="95h-YR-HxT" id="pMg-s6-iaw"/>
+                        <outlet property="pageIndicator" destination="jMk-6n-72O" id="HHB-fm-ezC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

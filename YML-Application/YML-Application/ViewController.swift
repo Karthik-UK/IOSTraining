@@ -2,32 +2,35 @@ import UIKit
 
 class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout ,UIScrollViewDelegate{
     
+    @IBOutlet weak var pageIndicator: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
     
   
-    var pageIndicator : UIPageControl = UIPageControl(frame: CGRect(x: (UIScreen.main.bounds.width)/2 - 20,  y: UIScreen.main.bounds.height - 200, width: 40, height: 20))
-    
     
     
     @IBAction func onClick(_ sender: Any) {
     }
-    
-    var images :[String] = ["1","2","3","4"]
-    var heading:[String] = ["Molekule","The Home Depot","PayPal","State Farm"]
-    var imageLogo :[String] = ["1logo","2logo","3logo","4logo"]
-    var descriptn: [String] = ["The world's first intelligent air purifier, & the app putting clean air in people's hands. ",  "The ultimate power tool: A best-in-class digital experience for The Home Depot.","Payment giant goes mobile-by-design.","All things insurance, all things banking, all in one app."]
+    var images :[String] = ["","1","2","3","4"]
+    var heading:[String] = ["Hello","Molekule","The Home Depot","PayPal","State Farm"]
+    var imageLogo :[String] = ["","1logo", "2logo","3logo","4logo"]
+    var descriptn: [String] = ["hfugygfyf","The world's first intelligent air purifier, & the app putting clean air in people's hands. ",  "The ultimate power tool: A best-in-class digital experience for The Home Depot.","Payment giant goes mobile-by-design.","All things insurance, all things banking, all in one app."]
     
     func configurePageControl() {
         self.pageIndicator.numberOfPages = images.count
         self.pageIndicator.currentPage = 0
-        self.pageIndicator.tintColor = UIColor.red
-        self.pageIndicator.pageIndicatorTintColor = UIColor.black
-        self.pageIndicator.currentPageIndicatorTintColor = UIColor.green
+        self.pageIndicator.tintColor = self.randomclr()
+        self.pageIndicator.pageIndicatorTintColor = self.randomclr()
+        self.pageIndicator.currentPageIndicatorTintColor = self.randomclr()
         self.view.addSubview(pageIndicator)
     }
+    
+    
+    
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
         pageIndicator.currentPage = Int(pageNumber)
+        print(scrollView.contentOffset.x)
     }
     
     
@@ -59,8 +62,17 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
 //        scrollView.delegate = self
         
         configurePageControl()
-        print(UIScreen.main.bounds.width)
+        
+    }
+    
+    func randomclr()->UIColor{
+        let red = CGFloat(drand48())
+        let blue = CGFloat(drand48())
+        let green = CGFloat(drand48())
+        return UIColor(red: red, green: green, blue: blue, alpha: 1)
     }
 
 }
+
+
 
