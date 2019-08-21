@@ -7,6 +7,7 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var headTitle: UILabel!
     
     @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var descriptionTitle: UILabel!
     
 }
 

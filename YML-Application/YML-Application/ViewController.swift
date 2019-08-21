@@ -1,13 +1,36 @@
 import UIKit
 
-class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
+class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout ,UIScrollViewDelegate{
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+  
+    var pageIndicator : UIPageControl = UIPageControl(frame: CGRect(x: (UIScreen.main.bounds.width)/2 - 20,  y: UIScreen.main.bounds.height - 200, width: 40, height: 20))
+    
+    
+    
+    @IBAction func onClick(_ sender: Any) {
+    }
     
     var images :[String] = ["1","2","3","4"]
     var heading:[String] = ["Molekule","The Home Depot","PayPal","State Farm"]
     var imageLogo :[String] = ["1logo","2logo","3logo","4logo"]
+    var descriptn: [String] = ["The world's first intelligent air purifier, & the app putting clean air in people's hands. ",  "The ultimate power tool: A best-in-class digital experience for The Home Depot.","Payment giant goes mobile-by-design.","All things insurance, all things banking, all in one app."]
+    
+    func configurePageControl() {
+        self.pageIndicator.numberOfPages = images.count
+        self.pageIndicator.currentPage = 0
+        self.pageIndicator.tintColor = UIColor.red
+        self.pageIndicator.pageIndicatorTintColor = UIColor.black
+        self.pageIndicator.currentPageIndicatorTintColor = UIColor.green
+        self.view.addSubview(pageIndicator)
+    }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
+        pageIndicator.currentPage = Int(pageNumber)
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
@@ -18,43 +41,26 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         cell?.imageView.image =  UIImage(named: self.images[indexPath.row])
         cell?.headTitle.text = heading[indexPath.row]
         cell?.logoImage.image = UIImage(named: self.imageLogo[indexPath.row])
-        //            cell?.backgroundColor = UIColor.blue
-        //cell?.frame.size = cell?.bounds.size
-        //cell?. = UIScreen.main.bounds.width
-        
-        
-        //cell?.headTitle.numberOfLines = 1
-        //cell?.headTitle.frame = CGRect(x: self.view.bounds.size.width/2,y: 50,width: self.view.bounds.size.width, height: self.view.bounds.size.height) // x , y, width , height
-         //cell?.headTitle.textAlignment = .left
-         //cell?.headTitle.sizeToFit()
-         //cell?.headTitle.backgroundColor = UIColor.red
-        
-        
-        return cell!
+        cell?.descriptionTitle.text = descriptn[indexPath.row]
+   
+        return cell ?? UICollectionViewCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+ 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        // Compute the dimension of a cell for an NxN layout with space S between
-        // cells.  Take the collection view's width, subtract (N-1)*S points for
-        // the spaces between the cells, and then divide by N to find the final
-        // dimension for the cell's width and height.
-
-//        let cellsAcross: CGFloat = 3
-//        let spaceBetweenCells: CGFloat = 1
-//        let dim = (collectionView.bounds.width - (cellsAcross - 1) * spaceBetweenCells) / cellsAcross
         return UIScreen.main.bounds.size
     }
-    
-   
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        scrollView.delegate = self
         
+        configurePageControl()
+        print(UIScreen.main.bounds.width)
     }
 
 }
-//extension ViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: screenWidth, height: screenWidth)
-
 
