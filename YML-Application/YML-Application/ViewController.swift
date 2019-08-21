@@ -7,10 +7,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     @IBOutlet weak var buttonUI: UIButton!
     @IBAction func onClick(_ sender: Any) {
         
-        
-        
-        
-     
+  
     }
     var images :[String] = ["","1","2","3","4"]
     var heading:[String] = ["Hello","Molekule","The Home Depot","PayPal","State Farm"]
