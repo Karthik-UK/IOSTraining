@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F06B975230D4E4E000A04E0 /* WorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B974230D4E4E000A04E0 /* WorkVC.swift */; };
+		8F06B977230D5276000A04E0 /* WorkCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B976230D5276000A04E0 /* WorkCellVC.swift */; };
 		8F0B6D85230AD7F00053C0F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */; };
 		8F98DF9D23044C5A007FFDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F98DF9C23044C5A007FFDC4 /* AppDelegate.swift */; };
 		8F98DF9F23044C5A007FFDC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F98DF9E23044C5A007FFDC4 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F06B974230D4E4E000A04E0 /* WorkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkVC.swift; sourceTree = "<group>"; };
+		8F06B976230D5276000A04E0 /* WorkCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCellVC.swift; sourceTree = "<group>"; };
 		8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		8F98DF9923044C5A007FFDC4 /* YML-Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YML-Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F98DF9C23044C5A007FFDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,11 +62,13 @@
 			children = (
 				8F98DF9C23044C5A007FFDC4 /* AppDelegate.swift */,
 				8F98DF9E23044C5A007FFDC4 /* ViewController.swift */,
+				8F06B976230D5276000A04E0 /* WorkCellVC.swift */,
 				8F98DFA023044C5A007FFDC4 /* Main.storyboard */,
 				8F98DFA323044C5B007FFDC4 /* Assets.xcassets */,
 				8F98DFA523044C5B007FFDC4 /* LaunchScreen.storyboard */,
 				8F98DFA823044C5B007FFDC4 /* Info.plist */,
 				8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */,
+				8F06B974230D4E4E000A04E0 /* WorkVC.swift */,
 			);
 			path = "YML-Application";
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				8F98DF9F23044C5A007FFDC4 /* ViewController.swift in Sources */,
 				8F98DF9D23044C5A007FFDC4 /* AppDelegate.swift in Sources */,
+				8F06B977230D5276000A04E0 /* WorkCellVC.swift in Sources */,
 				8F0B6D85230AD7F00053C0F2 /* CollectionViewCell.swift in Sources */,
+				8F06B975230D4E4E000A04E0 /* WorkVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
