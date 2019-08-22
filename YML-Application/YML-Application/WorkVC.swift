@@ -12,19 +12,14 @@ class WorkVC: UIViewController ,UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WorkCellVC", for: indexPath) as? WorkCellVC
-        //cell?.heightAnchor = UIScreen.main.bounds.size.height 
         cell?.backgroundColor = .red
-        
-        //cell?frame = UIScreen.main.bounds.size
-        
         return cell ?? UITableViewCell()
     
     }
     
-    //print(UIScreen.main.bounds.size)
-    
-    
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return self.tableView.frame.height
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

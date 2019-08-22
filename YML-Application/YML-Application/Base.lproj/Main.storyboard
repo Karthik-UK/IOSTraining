@@ -160,7 +160,7 @@
             </objects>
             <point key="canvasLocation" x="-968" y="-602"/>
         </scene>
-        <!--Item-->
+        <!--ABOUT-->
         <scene sceneID="f8y-Ty-mkc">
             <objects>
                 <viewController id="iFf-ZI-Z0y" sceneMemberID="viewController">
@@ -170,14 +170,14 @@
                         <color key="backgroundColor" red="0.879349168003835" green="1" blue="0.23466638535892181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="pgH-Kz-keh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ATo-wd-ROQ"/>
+                    <tabBarItem key="tabBarItem" title="ABOUT" image="icon_about_us-1" id="ATo-wd-ROQ"/>
                     <navigationItem key="navigationItem" id="Q16-pT-lQ4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPI-E4-16m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-123" y="165"/>
         </scene>
-        <!--Item-->
+        <!--NEWS-->
         <scene sceneID="qpW-Er-n42">
             <objects>
                 <viewController id="sFm-s8-WJW" sceneMemberID="viewController">
@@ -187,14 +187,14 @@
                         <color key="backgroundColor" red="0.17596107682153894" green="1" blue="0.32563065618340503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="p82-4G-4wv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2iU-ua-qzk"/>
+                    <tabBarItem key="tabBarItem" title="NEWS" image="icon_news-1" id="2iU-ua-qzk"/>
                     <navigationItem key="navigationItem" id="gba-5G-3cX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVR-JI-9rw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="600" y="165"/>
         </scene>
-        <!--Item-->
+        <!--CAREERS-->
         <scene sceneID="0Si-oG-m1n">
             <objects>
                 <viewController id="b6i-Gz-gUt" sceneMemberID="viewController">
@@ -204,14 +204,14 @@
                         <color key="backgroundColor" red="0.17994453236099983" green="0.92314802285382558" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="WR3-np-CK1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="vL8-Ey-z9Q"/>
+                    <tabBarItem key="tabBarItem" title="CAREERS" image="icon_carrers-1" id="vL8-Ey-z9Q"/>
                     <navigationItem key="navigationItem" id="F2Q-nv-Rxz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zod-6Z-8gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1383" y="165"/>
         </scene>
-        <!--Item-->
+        <!--CONTACT-->
         <scene sceneID="mfe-yL-W6m">
             <objects>
                 <viewController id="gAD-Pa-Syo" sceneMemberID="viewController">
@@ -221,14 +221,14 @@
                         <color key="backgroundColor" red="0.43496574703539481" green="0.475713997930578" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="UUt-qY-2fQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Sxo-Pr-LqE"/>
+                    <tabBarItem key="tabBarItem" title="CONTACT" image="icon_contact_us-1" id="Sxo-Pr-LqE"/>
                     <navigationItem key="navigationItem" id="iPb-7P-A9Y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZB8-Pa-1NB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2125" y="165"/>
         </scene>
-        <!--Item-->
+        <!--WORK-->
         <scene sceneID="XuN-7G-Hst">
             <objects>
                 <viewController id="YCR-Jl-pKM" customClass="WorkVC" customModule="YML_Application" customModuleProvider="target" sceneMemberID="viewController">
@@ -264,7 +264,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="evF-hc-R0O"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="xnU-Yt-3rR"/>
+                    <tabBarItem key="tabBarItem" title="WORK" image="icon_work-1" id="xnU-Yt-3rR"/>
                     <navigationItem key="navigationItem" id="FfH-Hn-WHR"/>
                     <connections>
                         <outlet property="tableView" destination="xLp-zZ-IyN" id="6ec-cP-dqc"/>
@@ -314,6 +314,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_about_us-1" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="icon_carrers-1" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="icon_contact_us-1" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="icon_news-1" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="icon_work-1" width="16.666666030883789" height="16.666666030883789"/>
         <image name="yml" width="136" height="136"/>
     </resources>
 </document>
