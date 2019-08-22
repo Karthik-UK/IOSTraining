@@ -11,7 +11,7 @@ class WorkVC: UIViewController ,UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath) as? WorkCellVC
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WorkCellVC", for: indexPath) as? WorkCellVC
         //cell?.heightAnchor = UIScreen.main.bounds.size.height 
         cell?.backgroundColor = .red
         

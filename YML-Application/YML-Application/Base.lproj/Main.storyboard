@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="95h-YR-HxT">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="95h-YR-HxT">
                                 <rect key="frame" x="0.0" y="44" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gAz-y8-Znt">
@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="tAN-Sb-0qQ" customClass="CollectionViewCell" customModule="YML_Application" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="tAN-Sb-0qQ" customClass="CollectionViewCell" customModule="YML_Application" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="697"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -121,9 +121,6 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="DSM-Rc-kIq" kind="show" id="IX5-7H-Gla"/>
-                                </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="jMk-6n-72O">
                                 <rect key="frame" x="187.5" y="705" width="39" height="37"/>
@@ -151,14 +148,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="buttonUI" destination="DCz-qw-mMV" id="PdQ-v1-IqI"/>
+                        <outlet property="buttonUI" destination="DCz-qw-mMV" id="UgO-6d-CrC"/>
                         <outlet property="collectionView" destination="95h-YR-HxT" id="pMg-s6-iaw"/>
                         <outlet property="pageIndicator" destination="jMk-6n-72O" id="HHB-fm-ezC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-304.34782608695656" y="122.54464285714285"/>
+            <point key="canvasLocation" x="-942" y="228"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="f8y-Ty-mkc">
@@ -236,7 +233,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="697" id="NYq-n1-cLN" customClass="WorkCellVC" customModule="YML_Application" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkCellVC" rowHeight="697" id="NYq-n1-cLN" customClass="WorkCellVC" customModule="YML_Application" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="697"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NYq-n1-cLN" id="qHU-5V-nfO">
@@ -291,7 +288,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="BVD-4r-Hbw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="trb-jV-zXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="DSM-Rc-kIq" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1fQ-6F-QHC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -306,6 +302,7 @@
                         <segue destination="eRx-fg-qwU" kind="relationship" relationship="viewControllers" id="Lsd-kk-AGT"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="trb-jV-zXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="796" y="229"/>
         </scene>
