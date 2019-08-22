@@ -1,7 +1,12 @@
 import UIKit
 
 class WorkCellVC: UITableViewCell {
-
+    @IBOutlet weak var imageViewer: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
        

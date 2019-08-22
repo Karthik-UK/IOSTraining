@@ -81,10 +81,10 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource ,UI
 
 //Structure for all static images,labels etc.
 struct constantThings {
-    let images :String //= ["","1","2","3","4"]
-    let headings:String //= ["Hello","Molekule","The Home Depot","PayPal","State Farm"]
-    let imageLogos :String //= ["","1logo", "2logo","3logo","4logo"]
-    let descriptions: String// = ["We are a design and innovation agency, creating digital products and experiences that have a lasting impact.","The world's first intelligent air purifier, & the app putting clean air in people's hands. ",  "The ultimate power tool: A best-in-class digital experience for The Home Depot.","Payment giant goes mobile-by-design.","All things insurance, all things banking, all in one app."]
+    let images :String
+    let headings:String
+    let imageLogos :String
+    let descriptions: String
 }
 
 
