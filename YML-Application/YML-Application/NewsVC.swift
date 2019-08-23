@@ -2,75 +2,75 @@ import UIKit
 
 class NewsVC: UIViewController {
 
+    @IBOutlet weak var segmentedOutlet: UISegmentedControl!
     @IBOutlet weak var newsTableView: UITableView!
-     var workInform : [workConstants] = []
-    var colors = ["1", "2"]
+    @IBAction func onSelect(_ sender: Any) {
+        switch segmentedOutlet.selectedSegmentIndex
+        {
+        case 0: print("1")
+        case 1: newsTableView.backgroundColor = .red
+        
+        default: break
+        }
+    }
+  
+    var newsInform : [newsConstants] = []
+    var typeofnews = ["featured","Technology","Design"]
     override func viewDidLoad() {
         super.viewDidLoad()
-       NewsUIConstants()
+        NewsUIConstants()
     }
   
     func NewsUIConstants(){
-        let theNorthFace = workConstants(workimage: "north-face-featured-1", worktitle: "THE NORTH FACE",  workdescription: "How The North Face redefined loyalty to embrace the great outdoors.",workurl: "https://ymedialabs.com/project/the-north-face")
-        let clover = workConstants(workimage: "clover-featured", worktitle: "CLOVER", workdescription: "How Clover Go has become an open ecosystem for point-of-sale payments. ",workurl: "https://ymedialabs.com/project/clover")
-        let credit = workConstants(workimage: "creditone-featured", worktitle:  "CREDIT ONE", workdescription: "How Credit One has become America's fastest-growing credit card issuer.",workurl: "https://ymedialabs.com/project/credit-one")
-        workInform.append(theNorthFace)
-        workInform.append(clover)
-        workInform.append(credit)
+        let c3ai = newsConstants(newsimage: "pexels-photo-788946", newstitle: "IPHONES",  newsdescription: "The Best Phone Of 2019",newsurl: "https://ymedialabs.com/ultimate-mobile-design-trends-2018",tag :"design")
+        let Creativity = newsConstants(newsimage: "creative", newstitle: "CREATIVE", newsdescription: "YML X — A Memo to Our Team and Partners",newsurl: "https://ymedialabs.com/x",tag:"tech")
+        let mcd = newsConstants(newsimage: "mcdonalds-lead", newstitle: "McD", newsdescription: "We Are People: What it Means to Have a People-First Approach", newsurl: "https://ymedialabs.com/we-are-people-what-it-means-to-have-a-people-first-approach",tag: "design")
+        newsInform.append(c3ai)
+        newsInform.append(Creativity)
+        newsInform.append(mcd)
+       
     }
 
 }
-extension NewsVC : UITableViewDataSource,UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate{
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return colors.count
-    }
-    
-        func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            return colors[row]
-        }
-    
-        func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//            self.labelText.text = colors[row]
-            print(colors[row])
-        }
-    
-    
+extension NewsVC : UITableViewDataSource,UITableViewDelegate{
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return workInform.count
+        return newsInform.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NewscellVC", for: indexPath) as? NewscellVC
-        cell?.imageViewOutlet.image =  UIImage(named: workInform[indexPath.row].workimage)
-        cell?.labelText.text = workInform[indexPath.row].worktitle
-        cell?.titleDescription.text = workInform[indexPath.row].workdescription
-        
-        cell?.pickerView.delegate = self
-        cell?.pickerView.dataSource = self
-        
+        let cell = newsTableView.dequeueReusableCell(withIdentifier: "NewscellVC", for: indexPath) as! NewscellVC
+        cell.imageViewOutlet.image =  UIImage(named: newsInform[indexPath.row].newsimage)
+        cell.labelText.text = newsInform[indexPath.row].newstitle
+        cell.titleDescription.text = newsInform[indexPath.row].newsdescription
+        //cell?.backgroundColor = randomclr()
         return cell ?? UITableViewCell()
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let webViewController = self.storyboard?.instantiateViewController(withIdentifier: "WebVC") as! WebVC
-        webViewController.url = URL(string: workInform[indexPath.row].workurl)
+        webViewController.url = URL(string: newsInform[indexPath.row].newsurl)
         self.navigationController?.pushViewController(webViewController, animated: true)
-        // webViewController.}
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return self.newsTableView.frame.height
+            return  450//self.newsTableView.frame.height
         }
 
+    
+    func randomclr()->UIColor{
+        let red = CGFloat(drand48())
+        let blue = CGFloat(drand48())
+        let green = CGFloat(drand48())
+        return UIColor(red: red, green: green, blue: blue, alpha: 1)
+    }
+    
 }
 
-struct worConstants {
-    let workimage :String
-    let worktitle: String
-    let workdescription: String
-    let workurl :String
+struct newsConstants {
+    let newsimage :String
+    let newstitle: String
+    let newsdescription: String
+    let newsurl :String
+    let tag :String
+ 
 }
