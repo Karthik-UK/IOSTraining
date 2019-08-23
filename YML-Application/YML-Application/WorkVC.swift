@@ -19,6 +19,7 @@ func WorkUIConstants(){
     workInform.append(credit)
 }
 }
+
 extension WorkVC : UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return workInform.count
@@ -31,9 +32,11 @@ extension WorkVC : UITableViewDataSource,UITableViewDelegate{
         cell?.descriptionLabel.text = workInform[indexPath.row].workdescription
         return cell ?? UITableViewCell()
         }
+    
+   
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let webViewController = self.storyboard?.instantiateViewController(withIdentifier: "WebVC") as! WebVC
-        webViewController.URl = URL(string: workInform[indexPath.row].workurl)
+        webViewController.url = URL(string: workInform[indexPath.row].workurl)
         self.navigationController?.pushViewController(webViewController, animated: true)
        // webViewController.
     

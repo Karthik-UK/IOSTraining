@@ -177,19 +177,73 @@
         <!--NEWS-->
         <scene sceneID="qpW-Er-n42">
             <objects>
-                <viewController id="sFm-s8-WJW" sceneMemberID="viewController">
+                <viewController id="sFm-s8-WJW" customClass="NewsVC" customModule="YML_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Koz-lL-RBs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qoy-HB-ing">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewscellVC" rowHeight="428" id="gce-Jb-ild" customClass="NewscellVC" customModule="YML_Application" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="428"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gce-Jb-ild" id="tej-Ew-DxS" customClass="NewscellVC" customModule="YML_Application" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="427.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WqQ-ke-Enc">
+                                                    <rect key="frame" x="40" y="24" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6a-pK-FFu">
+                                                    <rect key="frame" x="97" y="189" width="91" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-6C-vfn">
+                                                    <rect key="frame" x="51" y="265" width="229" height="121"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageViewOutlet" destination="WqQ-ke-Enc" id="Is9-HO-gyl"/>
+                                            <outlet property="labelText" destination="g6a-pK-FFu" id="w0X-SR-ekP"/>
+                                            <outlet property="titleDescription" destination="3vw-6C-vfn" id="OIf-Pa-wcj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sFm-s8-WJW" id="yVd-Kz-7uL"/>
+                                    <outlet property="delegate" destination="sFm-s8-WJW" id="qPn-Nw-NYY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.17596107682153894" green="1" blue="0.32563065618340503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qoy-HB-ing" firstAttribute="leading" secondItem="p82-4G-4wv" secondAttribute="leading" id="N9c-xN-vAA"/>
+                            <constraint firstItem="p82-4G-4wv" firstAttribute="bottom" secondItem="qoy-HB-ing" secondAttribute="bottom" id="NfG-Wf-pkt"/>
+                            <constraint firstItem="qoy-HB-ing" firstAttribute="top" secondItem="p82-4G-4wv" secondAttribute="top" id="dKn-mT-bB3"/>
+                            <constraint firstItem="p82-4G-4wv" firstAttribute="trailing" secondItem="qoy-HB-ing" secondAttribute="trailing" id="yPb-dy-dTa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="p82-4G-4wv"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="NEWS" image="icon_news-1" id="2iU-ua-qzk"/>
                     <navigationItem key="navigationItem" id="gba-5G-3cX"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="qoy-HB-ing" id="zbI-4j-Fhe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVR-JI-9rw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="600" y="165"/>
+            <point key="canvasLocation" x="600" y="164.78873239436621"/>
         </scene>
         <!--CAREERS-->
         <scene sceneID="0Si-oG-m1n">
@@ -303,9 +357,7 @@
                         <viewLayoutGuide key="safeArea" id="evF-hc-R0O"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="WORK" image="icon_work-1" id="xnU-Yt-3rR"/>
-                    <navigationItem key="navigationItem" title="YML" id="FfH-Hn-WHR">
-                        <barButtonItem key="backBarButtonItem" title="back" id="fVU-sl-fJ7"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="YML" id="FfH-Hn-WHR"/>
                     <connections>
                         <outlet property="tableView" destination="xLp-zZ-IyN" id="6ec-cP-dqc"/>
                     </connections>
@@ -343,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYV-vr-3IZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-465" y="1013"/>
+            <point key="canvasLocation" x="-1121" y="949"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7d1-9p-XF2">
@@ -365,7 +417,9 @@
         <scene sceneID="BVD-4r-Hbw">
             <objects>
                 <tabBarController id="DSM-Rc-kIq" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="YML" id="sCO-mt-Vpr"/>
+                    <navigationItem key="navigationItem" title="YML" id="sCO-mt-Vpr">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Llx-Hc-W8P"/>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1fQ-6F-QHC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -393,5 +447,5 @@
         <image name="icon_work-1" width="16.666666030883789" height="16.666666030883789"/>
         <image name="yml" width="136" height="136"/>
     </resources>
-    <color key="tintColor" red="0.52867501589999999" green="1" blue="0.71379963550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
