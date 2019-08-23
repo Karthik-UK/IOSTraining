@@ -39,10 +39,10 @@ extension NewsVC : UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = newsTableView.dequeueReusableCell(withIdentifier: "NewscellVC", for: indexPath) as! NewscellVC
-        cell.imageViewOutlet.image =  UIImage(named: newsInform[indexPath.row].newsimage)
-        cell.labelText.text = newsInform[indexPath.row].newstitle
-        cell.titleDescription.text = newsInform[indexPath.row].newsdescription
+        let cell = newsTableView.dequeueReusableCell(withIdentifier: "Newcell", for: indexPath) as! Newcell
+        cell.imageOutlet.image = UIImage(named: newsInform[indexPath.row].newsimage)
+        cell.labelOutlet.text = newsInform[indexPath.row].newstitle
+        cell.labelExplain.text = newsInform[indexPath.row].newsdescription
         //cell?.backgroundColor = randomclr()
         return cell ?? UITableViewCell()
     }
