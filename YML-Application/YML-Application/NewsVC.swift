@@ -4,14 +4,13 @@ class NewsVC: UIViewController {
 
     @IBOutlet weak var newsTableView: UITableView!
      var workInform : [workConstants] = []
+    var colors = ["1", "2"]
     override func viewDidLoad() {
         super.viewDidLoad()
-       WorkUIConstants()
+       NewsUIConstants()
     }
-    
-    
-    
-    func WorkUIConstants(){
+  
+    func NewsUIConstants(){
         let theNorthFace = workConstants(workimage: "north-face-featured-1", worktitle: "THE NORTH FACE",  workdescription: "How The North Face redefined loyalty to embrace the great outdoors.",workurl: "https://ymedialabs.com/project/the-north-face")
         let clover = workConstants(workimage: "clover-featured", worktitle: "CLOVER", workdescription: "How Clover Go has become an open ecosystem for point-of-sale payments. ",workurl: "https://ymedialabs.com/project/clover")
         let credit = workConstants(workimage: "creditone-featured", worktitle:  "CREDIT ONE", workdescription: "How Credit One has become America's fastest-growing credit card issuer.",workurl: "https://ymedialabs.com/project/credit-one")
@@ -19,12 +18,26 @@ class NewsVC: UIViewController {
         workInform.append(clover)
         workInform.append(credit)
     }
-    
-    
-    
 
 }
-extension NewsVC : UITableViewDataSource,UITableViewDelegate{
+extension NewsVC : UITableViewDataSource,UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return colors.count
+    }
+    
+        func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+            return colors[row]
+        }
+    
+        func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+//            self.labelText.text = colors[row]
+            print(colors[row])
+        }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return workInform.count
@@ -35,6 +48,10 @@ extension NewsVC : UITableViewDataSource,UITableViewDelegate{
         cell?.imageViewOutlet.image =  UIImage(named: workInform[indexPath.row].workimage)
         cell?.labelText.text = workInform[indexPath.row].worktitle
         cell?.titleDescription.text = workInform[indexPath.row].workdescription
+        
+        cell?.pickerView.delegate = self
+        cell?.pickerView.dataSource = self
+        
         return cell ?? UITableViewCell()
     }
     
@@ -48,8 +65,6 @@ extension NewsVC : UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             return self.newsTableView.frame.height
         }
-    
-    
 
 }
 
