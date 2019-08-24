@@ -5,9 +5,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-   
+   var keyapi = ("AIzaSyBwX3H1YaNDuCH5YyrI9C3PlTV0hkRdE10")
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-            GMSServices.provideAPIKey("AIzaSyBwX3H1YaNDuCH5YyrI9C3PlTV0hkRdE10")
+            GMSServices.provideAPIKey(keyapi)
         UITabBar.appearance().tintColor = .yellow
         UITabBar.appearance().barTintColor = .black
         return true
