@@ -3,13 +3,7 @@ import MessageUI
 class ContactVC: UIViewController  {
     @IBOutlet weak var titleTag: UILabel!
 
-    @IBAction func nclick(_ sender: Any) {
-        
-        
-        sendEmail()
-        
-        
-    }
+  
     @IBOutlet weak var onClickCall: UILabel!
 
     @IBOutlet weak var emailOutlet: UILabel!
@@ -17,27 +11,13 @@ class ContactVC: UIViewController  {
         super.viewDidLoad()
         let tapDial = UITapGestureRecognizer(target:self, action: Selector(("actionTapped:")))
         
-        let tapMail = UITapGestureRecognizer(target:self, action: Selector(("SendEmail:")))
+        let tapMail = UITapGestureRecognizer(target:self, action: Selector(("sendEmail:")))
         
         onClickCall.addGestureRecognizer(tapDial)
         emailOutlet.addGestureRecognizer(tapMail)
         
     }
 
-    
-//    @objc func showMailAlert(_ sender: UITapGestureRecognizer){
-//        let emailaddress = emailOutlet.text ?? "invalid email"
-//        if let mailURL = URL(string: "mailto://\(emailaddress)"){
-//            let alert = UIAlertController(title: "Send mail to \(mailURL)?", message: "", preferredStyle: .actionSheet)
-//
-//            let sendAction = UIAlertAction(title: "Send", style: .default, handler: nil)
-//            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-//            alert.addAction(sendAction)
-//            alert.addAction(cancelAction)
-//            self.present(alert, animated: true, completion: nil)
-//        }
-    
-    
     
     @objc func actionTapped(_ sender: UITapGestureRecognizer) {
         
@@ -56,15 +36,16 @@ class ContactVC: UIViewController  {
 
     }
 extension ContactVC: MFMailComposeViewControllerDelegate{
-    func sendEmail() {
+    @objc func sendEmail(_ sender: UITapGestureRecognizer)
+   {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
             mail.setToRecipients(["karthik.uk@ymedialabs.com"])
-            mail.setMessageBody("Enter the  mail", isHTML: true)
+            mail.setMessageBody("Hi There Hello", isHTML: true)
             present(mail, animated: true)
         } else {
-            print("dgvfghfjujkuyyjkukiukujkjukkjkh")
+            print("Connect The Device")
         }
     }
     
