@@ -11,6 +11,7 @@
 		8F048775230FA466004C43B0 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F048774230FA466004C43B0 /* NewsVC.swift */; };
 		8F04877A230FF331004C43B0 /* DummyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F048778230FF331004C43B0 /* DummyCell.swift */; };
 		8F04877B230FF331004C43B0 /* DummyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F048779230FF331004C43B0 /* DummyCell.xib */; };
+		8F05C442231100EB003EE53D /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F05C441231100EB003EE53D /* ContactVC.swift */; };
 		8F06B975230D4E4E000A04E0 /* WorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B974230D4E4E000A04E0 /* WorkVC.swift */; };
 		8F06B977230D5276000A04E0 /* WorkCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B976230D5276000A04E0 /* WorkCellVC.swift */; };
 		8F0B6D85230AD7F00053C0F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */; };
@@ -30,6 +31,7 @@
 		8F048774230FA466004C43B0 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		8F048778230FF331004C43B0 /* DummyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCell.swift; sourceTree = "<group>"; };
 		8F048779230FF331004C43B0 /* DummyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyCell.xib; sourceTree = "<group>"; };
+		8F05C441231100EB003EE53D /* ContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
 		8F06B974230D4E4E000A04E0 /* WorkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkVC.swift; sourceTree = "<group>"; usesTabs = 0; };
 		8F06B976230D5276000A04E0 /* WorkCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCellVC.swift; sourceTree = "<group>"; };
 		8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				8F98DF9C23044C5A007FFDC4 /* AppDelegate.swift */,
 				8F98DF9E23044C5A007FFDC4 /* ViewController.swift */,
+				8F05C441231100EB003EE53D /* ContactVC.swift */,
 				8F06B976230D5276000A04E0 /* WorkCellVC.swift */,
 				8F048774230FA466004C43B0 /* NewsVC.swift */,
 				8F83E6A12310009000827FA5 /* Newcell.swift */,
@@ -173,6 +176,7 @@
 				8F98DF9F23044C5A007FFDC4 /* ViewController.swift in Sources */,
 				8F83E6A62310260500827FA5 /* News.swift in Sources */,
 				8F83E69F230FF9DF00827FA5 /* CheckingCell.swift in Sources */,
+				8F05C442231100EB003EE53D /* ContactVC.swift in Sources */,
 				8F04877A230FF331004C43B0 /* DummyCell.swift in Sources */,
 				8F98DF9D23044C5A007FFDC4 /* AppDelegate.swift in Sources */,
 				8F06B977230D5276000A04E0 /* WorkCellVC.swift in Sources */,

@@ -4,12 +4,9 @@ class WorkCellVC: UITableViewCell {
     @IBOutlet weak var imageViewer: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    
-    
-    
+
     override func awakeFromNib() {
-        super.awakeFromNib()
-       
+        super.awakeFromNib()       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

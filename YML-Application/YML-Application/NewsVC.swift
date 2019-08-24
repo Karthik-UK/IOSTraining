@@ -50,10 +50,10 @@ extension NewsVC : UITableViewDataSource,UITableViewDelegate{
         }
         
     }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//            return newsTableView.bounds.height
+//        }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return newsTableView.frame.height
-        }
-    func tableView(_ tableView: UITableView, HeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
     
