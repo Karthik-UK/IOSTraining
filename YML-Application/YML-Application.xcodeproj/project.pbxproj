@@ -25,9 +25,12 @@
 		8F98DFA223044C5A007FFDC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F98DFA023044C5A007FFDC4 /* Main.storyboard */; };
 		8F98DFA423044C5B007FFDC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F98DFA323044C5B007FFDC4 /* Assets.xcassets */; };
 		8F98DFA723044C5B007FFDC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F98DFA523044C5B007FFDC4 /* LaunchScreen.storyboard */; };
+		C161DF181858AB320285226A /* Pods_YML_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6420904AA9673075C75DA893 /* Pods_YML_Application.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		544B55A0A924EA076949DDC7 /* Pods-YML-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YML-Application.debug.xcconfig"; path = "Target Support Files/Pods-YML-Application/Pods-YML-Application.debug.xcconfig"; sourceTree = "<group>"; };
+		6420904AA9673075C75DA893 /* Pods_YML_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YML_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F01BA32230EC81F0022C0C2 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		8F048774230FA466004C43B0 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		8F048778230FF331004C43B0 /* DummyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCell.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		8F98DFA323044C5B007FFDC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F98DFA623044C5B007FFDC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F98DFA823044C5B007FFDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA18ECADEFFCDFA35CFF9686 /* Pods-YML-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YML-Application.release.xcconfig"; path = "Target Support Files/Pods-YML-Application/Pods-YML-Application.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C161DF181858AB320285226A /* Pods_YML_Application.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07FC1713F76D66B82251CA97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				544B55A0A924EA076949DDC7 /* Pods-YML-Application.debug.xcconfig */,
+				FA18ECADEFFCDFA35CFF9686 /* Pods-YML-Application.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8F98DF9023044C5A007FFDC4 = {
 			isa = PBXGroup;
 			children = (
 				8F98DF9B23044C5A007FFDC4 /* YML-Application */,
 				8F98DF9A23044C5A007FFDC4 /* Products */,
+				07FC1713F76D66B82251CA97 /* Pods */,
+				F78FB8F87B100E6447DBCF44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +120,14 @@
 			path = "YML-Application";
 			sourceTree = "<group>";
 		};
+		F78FB8F87B100E6447DBCF44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6420904AA9673075C75DA893 /* Pods_YML_Application.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F98DFAB23044C5B007FFDC4 /* Build configuration list for PBXNativeTarget "YML-Application" */;
 			buildPhases = (
+				8C13B8A91BB471E2653EF916 /* [CP] Check Pods Manifest.lock */,
 				8F98DF9523044C5A007FFDC4 /* Sources */,
 				8F98DF9623044C5A007FFDC4 /* Frameworks */,
 				8F98DF9723044C5A007FFDC4 /* Resources */,
+				B9D23D9B0B182F49942573B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,6 +197,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C13B8A91BB471E2653EF916 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YML-Application-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9D23D9B0B182F49942573B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YML-Application/Pods-YML-Application-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YML-Application/Pods-YML-Application-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YML-Application/Pods-YML-Application-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F98DF9523044C5A007FFDC4 /* Sources */ = {
@@ -332,6 +401,7 @@
 		};
 		8F98DFAC23044C5B007FFDC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544B55A0A924EA076949DDC7 /* Pods-YML-Application.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -349,6 +419,7 @@
 		};
 		8F98DFAD23044C5B007FFDC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA18ECADEFFCDFA35CFF9686 /* Pods-YML-Application.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
