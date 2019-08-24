@@ -371,6 +371,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9h-1c-Xyw">
+                                <rect key="frame" x="184" y="523" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="mFQ-id-vV3" kind="push" id="APC-jF-M2J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -415,6 +423,25 @@
             </objects>
             <point key="canvasLocation" x="2123.1884057971015" y="163.04347826086959"/>
         </scene>
+        <!--Google MapsVC-->
+        <scene sceneID="y2X-Cq-Yyh">
+            <objects>
+                <viewController id="mFQ-id-vV3" customClass="GoogleMapsVC" customModule="YML_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8lG-kb-mQj" customClass="GMSMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q5h-n5-y7H"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2bw-Qd-wsg"/>
+                    <connections>
+                        <outlet property="mapView" destination="8lG-kb-mQj" id="S1U-h5-w8l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpb-sA-en2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3007" y="479"/>
+        </scene>
         <!--YML-->
         <scene sceneID="XuN-7G-Hst">
             <objects>
@@ -435,7 +462,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YMLlogo-jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="t7m-Z8-BN4">
-                                                    <rect key="frame" x="30" y="21" width="328" height="155"/>
+                                                    <rect key="frame" x="30" y="21" width="328.00000000000006" height="155.00000000000006"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="155" id="JQU-Zc-Gd3">
                                                             <variation key="heightClass=regular-widthClass=regular" constant="500"/>
@@ -532,21 +559,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYV-vr-3IZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1121" y="949"/>
-        </scene>
-        <!--Maps Viewcontroller-->
-        <scene sceneID="upj-6a-T8f">
-            <objects>
-                <viewController id="Pew-SC-97W" customClass="MapsViewcontroller" customModule="YML_Application" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Toa-Vp-H1o">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Uux-i4-NV9"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ioe-vS-ETL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2239" y="921"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7d1-9p-XF2">

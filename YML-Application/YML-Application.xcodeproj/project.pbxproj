@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,10 +12,10 @@
 		8F04877A230FF331004C43B0 /* DummyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F048778230FF331004C43B0 /* DummyCell.swift */; };
 		8F04877B230FF331004C43B0 /* DummyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F048779230FF331004C43B0 /* DummyCell.xib */; };
 		8F05C442231100EB003EE53D /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F05C441231100EB003EE53D /* ContactVC.swift */; };
-		8F05C444231121D7003EE53D /* MapsViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F05C443231121D7003EE53D /* MapsViewcontroller.swift */; };
 		8F06B975230D4E4E000A04E0 /* WorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B974230D4E4E000A04E0 /* WorkVC.swift */; };
 		8F06B977230D5276000A04E0 /* WorkCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B976230D5276000A04E0 /* WorkCellVC.swift */; };
 		8F0B6D85230AD7F00053C0F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */; };
+		8F19BB452311627E00EB2216 /* GoogleMapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */; };
 		8F83E69F230FF9DF00827FA5 /* CheckingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F83E69D230FF9DF00827FA5 /* CheckingCell.swift */; };
 		8F83E6A0230FF9DF00827FA5 /* CheckingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F83E69E230FF9DF00827FA5 /* CheckingCell.xib */; };
 		8F83E6A22310009000827FA5 /* Newcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F83E6A12310009000827FA5 /* Newcell.swift */; };
@@ -36,10 +36,10 @@
 		8F048778230FF331004C43B0 /* DummyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCell.swift; sourceTree = "<group>"; };
 		8F048779230FF331004C43B0 /* DummyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyCell.xib; sourceTree = "<group>"; };
 		8F05C441231100EB003EE53D /* ContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
-		8F05C443231121D7003EE53D /* MapsViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewcontroller.swift; sourceTree = "<group>"; };
 		8F06B974230D4E4E000A04E0 /* WorkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkVC.swift; sourceTree = "<group>"; usesTabs = 0; };
 		8F06B976230D5276000A04E0 /* WorkCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCellVC.swift; sourceTree = "<group>"; };
 		8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsVC.swift; sourceTree = "<group>"; };
 		8F83E69D230FF9DF00827FA5 /* CheckingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckingCell.swift; sourceTree = "<group>"; };
 		8F83E69E230FF9DF00827FA5 /* CheckingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckingCell.xib; sourceTree = "<group>"; };
 		8F83E6A12310009000827FA5 /* Newcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newcell.swift; sourceTree = "<group>"; };
@@ -72,7 +72,6 @@
 				544B55A0A924EA076949DDC7 /* Pods-YML-Application.debug.xcconfig */,
 				FA18ECADEFFCDFA35CFF9686 /* Pods-YML-Application.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,8 +103,8 @@
 				8F048774230FA466004C43B0 /* NewsVC.swift */,
 				8F83E6A12310009000827FA5 /* Newcell.swift */,
 				8F83E6A52310260500827FA5 /* News.swift */,
-				8F05C443231121D7003EE53D /* MapsViewcontroller.swift */,
 				8F01BA32230EC81F0022C0C2 /* WebVC.swift */,
+				8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */,
 				8F98DFA023044C5A007FFDC4 /* Main.storyboard */,
 				8F98DFA323044C5B007FFDC4 /* Assets.xcassets */,
 				8F98DFA523044C5B007FFDC4 /* LaunchScreen.storyboard */,
@@ -245,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F05C444231121D7003EE53D /* MapsViewcontroller.swift in Sources */,
+				8F19BB452311627E00EB2216 /* GoogleMapsVC.swift in Sources */,
 				8F98DF9F23044C5A007FFDC4 /* ViewController.swift in Sources */,
 				8F83E6A62310260500827FA5 /* News.swift in Sources */,
 				8F83E69F230FF9DF00827FA5 /* CheckingCell.swift in Sources */,
