@@ -365,7 +365,7 @@
                                 <color key="textColor" red="0.43496574700000001" green="0.47571399790000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="karthik.uk@ymedialabs.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dv-j0-eBc">
+                            <label opaque="NO" contentMode="left" verticalHuggingPriority="251" text="karthik.uk@ymedialabs.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dv-j0-eBc">
                                 <rect key="frame" x="106" y="426" width="308" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -406,6 +406,7 @@
                     <tabBarItem key="tabBarItem" title="CONTACT" image="icon_contact_us-1" id="Sxo-Pr-LqE"/>
                     <navigationItem key="navigationItem" id="iPb-7P-A9Y"/>
                     <connections>
+                        <outlet property="emailOutlet" destination="2dv-j0-eBc" id="vfB-8q-PXs"/>
                         <outlet property="onClickCall" destination="slR-vC-DWq" id="VIi-ln-JVc"/>
                         <outlet property="titleTag" destination="JDS-qk-Fhf" id="mai-ea-wrV"/>
                     </connections>
@@ -531,6 +532,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYV-vr-3IZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1121" y="949"/>
+        </scene>
+        <!--Maps Viewcontroller-->
+        <scene sceneID="upj-6a-T8f">
+            <objects>
+                <viewController id="Pew-SC-97W" customClass="MapsViewcontroller" customModule="YML_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Toa-Vp-H1o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Uux-i4-NV9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ioe-vS-ETL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2239" y="921"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7d1-9p-XF2">
