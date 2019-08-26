@@ -55,7 +55,7 @@ class CareerVC: UIViewController {
                         print(item.location)
                     }
                     DispatchQueue.main.async {
-                        //self.videoView.reloadData()
+                        self.careerTableView.reloadData()
                     }
                 } catch {
                     print("Error : \(error)")
@@ -80,7 +80,6 @@ class CareerVC: UIViewController {
                 print("Invalid video object")
                 return
             }
-            
             print("Title = \(vid.title), url = \(vid.videoURL), thumbnail = \(vid.thumbnailURL)")
             
             if let videoURL = vid.videoURL[.Quality540p] {
@@ -90,11 +89,10 @@ class CareerVC: UIViewController {
                 self.view.layer.addSublayer(playerLayer)
                 player.play()
                 
-            }
-        })
+            }})
     }
     
-    }
+}
 extension CareerVC : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ careerTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return jsonItems.count
@@ -113,7 +111,7 @@ extension CareerVC : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ careerTableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //return UITableView.automaticDimension
-        return careerTableView.bounds.height
+        return 250
     }
     
 }
