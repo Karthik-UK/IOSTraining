@@ -1,5 +1,4 @@
 import UIKit
-
 class Newcell: UITableViewCell {
     
     @IBOutlet weak var imageOutlet: UIImageView!

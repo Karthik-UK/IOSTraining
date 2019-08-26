@@ -2,6 +2,8 @@ import UIKit
 
 class NewsVC: UIViewController {
     var news :[News] = []
+    let newsModel = NewsViewModel()
+    // create view Model Instance
     
     @IBOutlet weak var segmentedOutlet: UISegmentedControl!
     @IBOutlet weak var newsTableView: UITableView!
@@ -10,9 +12,9 @@ class NewsVC: UIViewController {
 
         switch segmentedOutlet.selectedSegmentIndex
         {
-        case 0: news = News.getFeatured()
-        case 1: news = News.getEbooks()
-        case 2: news  = News.getDesign()
+        case 0: news = newsModel.getFeatured()
+        case 1: news = newsModel.getEbooks()
+        case 2: news  = newsModel.getDesign()
         default: break
         }
         newsTableView.reloadData()
@@ -21,7 +23,7 @@ class NewsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        news = News.getFeatured()
+        news = newsModel.getFeatured()
        // newsTableView.estimatedRowHeight = 100
         //newsTableView.rowHeight = UITableView.automaticDimension
     }
