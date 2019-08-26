@@ -320,32 +320,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="394" height="418.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9e-ui-B4G">
-                                                    <rect key="frame" x="36" y="38" width="322" height="52"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9e-ui-B4G">
+                                                    <rect key="frame" x="36" y="38" width="73.5" height="37"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lj4-aV-7BT">
-                                                    <rect key="frame" x="36" y="114" width="259" height="55"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="lj4-aV-7BT">
+                                                    <rect key="frame" x="36" y="98" width="73.5" height="37"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zn6-Da-Se9">
-                                                    <rect key="frame" x="36" y="214" width="322" height="46"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zn6-Da-Se9">
+                                                    <rect key="frame" x="36" y="173" width="78" height="39.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Zn6-Da-Se9" firstAttribute="top" secondItem="lj4-aV-7BT" secondAttribute="bottom" constant="30" id="AgZ-AI-xo7"/>
-                                                <constraint firstItem="lj4-aV-7BT" firstAttribute="top" secondItem="g9e-ui-B4G" secondAttribute="bottom" constant="30" id="GMm-31-Qd6"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="g9e-ui-B4G" secondAttribute="trailing" constant="16" id="QQS-ga-k4L"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="lj4-aV-7BT" secondAttribute="trailing" constant="16" id="ixS-Kh-dfz"/>
-                                                <constraint firstItem="g9e-ui-B4G" firstAttribute="leading" secondItem="5pn-08-XQh" secondAttribute="leadingMargin" constant="16" id="nGc-oZ-vbj"/>
-                                                <constraint firstItem="g9e-ui-B4G" firstAttribute="top" secondItem="5pn-08-XQh" secondAttribute="topMargin" constant="27" id="yCB-eE-1vC"/>
+                                                <constraint firstItem="lj4-aV-7BT" firstAttribute="top" secondItem="g9e-ui-B4G" secondAttribute="bottom" constant="23" id="14K-Qd-qVm"/>
+                                                <constraint firstItem="g9e-ui-B4G" firstAttribute="top" secondItem="5pn-08-XQh" secondAttribute="topMargin" constant="27" id="2gl-L7-K2q"/>
+                                                <constraint firstItem="Zn6-Da-Se9" firstAttribute="leading" secondItem="5pn-08-XQh" secondAttribute="leadingMargin" constant="16" id="6nv-Ud-AX2"/>
+                                                <constraint firstItem="lj4-aV-7BT" firstAttribute="leading" secondItem="5pn-08-XQh" secondAttribute="leadingMargin" constant="16" id="ING-Sj-HDm"/>
+                                                <constraint firstItem="g9e-ui-B4G" firstAttribute="leading" secondItem="5pn-08-XQh" secondAttribute="leadingMargin" constant="16" id="IO7-np-Uv4"/>
+                                                <constraint firstItem="Zn6-Da-Se9" firstAttribute="top" secondItem="lj4-aV-7BT" secondAttribute="bottom" constant="38" id="iCR-0Z-wBm"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -538,7 +538,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YMLlogo-jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="t7m-Z8-BN4">
-                                                    <rect key="frame" x="30" y="21" width="328" height="155"/>
+                                                    <rect key="frame" x="30" y="21" width="328.00000000000006" height="155.00000000000006"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="155" id="JQU-Zc-Gd3">
                                                             <variation key="heightClass=regular-widthClass=regular" constant="500"/>
