@@ -14,6 +14,7 @@
 		8F05C442231100EB003EE53D /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F05C441231100EB003EE53D /* ContactVC.swift */; };
 		8F06B975230D4E4E000A04E0 /* WorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B974230D4E4E000A04E0 /* WorkVC.swift */; };
 		8F06B977230D5276000A04E0 /* WorkCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B976230D5276000A04E0 /* WorkCellVC.swift */; };
+		8F07AEA423139EDA006CCC54 /* CareerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F07AEA323139EDA006CCC54 /* CareerVC.swift */; };
 		8F0B6D85230AD7F00053C0F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */; };
 		8F19BB452311627E00EB2216 /* GoogleMapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */; };
 		8F83E69F230FF9DF00827FA5 /* CheckingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F83E69D230FF9DF00827FA5 /* CheckingCell.swift */; };
@@ -25,6 +26,7 @@
 		8F98DFA223044C5A007FFDC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F98DFA023044C5A007FFDC4 /* Main.storyboard */; };
 		8F98DFA423044C5B007FFDC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F98DFA323044C5B007FFDC4 /* Assets.xcassets */; };
 		8F98DFA723044C5B007FFDC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F98DFA523044C5B007FFDC4 /* LaunchScreen.storyboard */; };
+		8FCA9BEE2313BE67005AC926 /* CareerVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA9BED2313BE67005AC926 /* CareerVCCell.swift */; };
 		C161DF181858AB320285226A /* Pods_YML_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6420904AA9673075C75DA893 /* Pods_YML_Application.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,7 @@
 		8F05C441231100EB003EE53D /* ContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
 		8F06B974230D4E4E000A04E0 /* WorkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkVC.swift; sourceTree = "<group>"; usesTabs = 0; };
 		8F06B976230D5276000A04E0 /* WorkCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCellVC.swift; sourceTree = "<group>"; };
+		8F07AEA323139EDA006CCC54 /* CareerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerVC.swift; sourceTree = "<group>"; };
 		8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsVC.swift; sourceTree = "<group>"; };
 		8F83E69D230FF9DF00827FA5 /* CheckingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckingCell.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		8F98DFA323044C5B007FFDC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F98DFA623044C5B007FFDC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F98DFA823044C5B007FFDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FCA9BED2313BE67005AC926 /* CareerVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerVCCell.swift; sourceTree = "<group>"; };
 		FA18ECADEFFCDFA35CFF9686 /* Pods-YML-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YML-Application.release.xcconfig"; path = "Target Support Files/Pods-YML-Application/Pods-YML-Application.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,11 +102,13 @@
 			children = (
 				8F98DF9C23044C5A007FFDC4 /* AppDelegate.swift */,
 				8F98DF9E23044C5A007FFDC4 /* ViewController.swift */,
+				8F07AEA323139EDA006CCC54 /* CareerVC.swift */,
 				8F05C441231100EB003EE53D /* ContactVC.swift */,
 				8F06B976230D5276000A04E0 /* WorkCellVC.swift */,
 				8F048774230FA466004C43B0 /* NewsVC.swift */,
 				8F83E6A12310009000827FA5 /* Newcell.swift */,
 				8F83E6A52310260500827FA5 /* News.swift */,
+				8FCA9BED2313BE67005AC926 /* CareerVCCell.swift */,
 				8F01BA32230EC81F0022C0C2 /* WebVC.swift */,
 				8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */,
 				8F98DFA023044C5A007FFDC4 /* Main.storyboard */,
@@ -139,6 +145,7 @@
 				8F98DF9623044C5A007FFDC4 /* Frameworks */,
 				8F98DF9723044C5A007FFDC4 /* Resources */,
 				B9D23D9B0B182F49942573B7 /* [CP] Copy Pods Resources */,
+				F58E026276613C9B0C9D2D24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +244,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YML-Application/Pods-YML-Application-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F58E026276613C9B0C9D2D24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YML-Application/Pods-YML-Application-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YML-Application/Pods-YML-Application-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YML-Application/Pods-YML-Application-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -250,6 +274,8 @@
 				8F83E69F230FF9DF00827FA5 /* CheckingCell.swift in Sources */,
 				8F05C442231100EB003EE53D /* ContactVC.swift in Sources */,
 				8F04877A230FF331004C43B0 /* DummyCell.swift in Sources */,
+				8FCA9BEE2313BE67005AC926 /* CareerVCCell.swift in Sources */,
+				8F07AEA423139EDA006CCC54 /* CareerVC.swift in Sources */,
 				8F98DF9D23044C5A007FFDC4 /* AppDelegate.swift in Sources */,
 				8F06B977230D5276000A04E0 /* WorkCellVC.swift in Sources */,
 				8F048775230FA466004C43B0 /* NewsVC.swift in Sources */,

@@ -7,9 +7,7 @@ class WebVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         webViewOutlet.load(URLRequest(url: url))
-        
     }
 
 }

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_YML_ApplicationVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_YML_ApplicationVersionString[];
+FOUNDATION_EXPORT double HCVimeoVideoExtractorVersionNumber;
+FOUNDATION_EXPORT const unsigned char HCVimeoVideoExtractorVersionString[];
 

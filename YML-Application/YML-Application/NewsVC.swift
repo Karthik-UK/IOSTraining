@@ -20,7 +20,10 @@ class NewsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         news = News.getFeatured()
+       // newsTableView.estimatedRowHeight = 100
+        //newsTableView.rowHeight = UITableView.automaticDimension
     }
 }
 
@@ -43,18 +46,19 @@ extension NewsVC : UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let webViewController = self.storyboard?.instantiateViewController(withIdentifier: "WebVC") as? WebVC
+        if let webViewController = self.storyboard?.instantiateViewController(withIdentifier: String(describing: WebVC.self)) as? WebVC
         {
             webViewController.url = URL(string: news[indexPath.row].urlnews)
             self.navigationController?.pushViewController(webViewController, animated: true)
         }
         
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//            return newsTableView.bounds.height
-//        }
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+       
+         return UIScreen.main.bounds.height
+         //return UITableView.automaticDimension
+        
     }
     
     func randomclr()->UIColor{

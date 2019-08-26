@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -19,130 +19,178 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		43CA0CEE60D5FABC4630C0E3C48AAC66 /* Pods-YML-Application-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAA7F3B8E2701F16727C988CF7D105B /* Pods-YML-Application-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5BF59899B68ABF5FF6F0AEF734490D0 /* Pods-YML-Application-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 745B675E782206D02A22081B772E2E6A /* Pods-YML-Application-dummy.m */; };
-		DD998DA8775260C638DA6D58A3329B30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1D10B1BA071793BB5A762EA92E2523F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		24D3D9FCBC683F45FF4A40C93C912A68 /* HCVimeoVideoExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F385D65E01123AE28FE5205478B2C2 /* HCVimeoVideoExtractor.swift */; };
+		59EDEA2ABA52E1FD91EA969D86E0776A /* HCVimeoVideoExtractor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0A98AC1370D23FFA9CBE443D5DBA24 /* HCVimeoVideoExtractor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61F604CA7AD2B30389043E2F9E2D5F8E /* Pods-YML-Application-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CCAEC00C5AE302EB5FE542D5BBAF0B /* Pods-YML-Application-dummy.m */; };
+		8DFE0BD27C53E3347B60163CFA51FEF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B58DF731C73539435D7A351820C2A1C0 /* HCVimeoVideoExtractor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCB243268D2393B894CD3B011D955 /* HCVimeoVideoExtractor-dummy.m */; };
+		C19A2E8D5133E0F72A1EE46BC9B8A9A6 /* Pods-YML-Application-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 873B7201000232A9A96A8F15180067A0 /* Pods-YML-Application-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC544AF6ED65B495989AED4D88763D5D /* HCVimeoVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC835113900BAEC4FD8AD6A04CDC498 /* HCVimeoVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7317591F126DAAE7F7F6ADF745BAD486 /* PBXContainerItemProxy */ = {
+		3E3840FEF2C5657961A76134929E4856 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
 			remoteInfo = GoogleMaps;
 		};
+		854E4196D3DB20DE74963BEBCC512A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E939424EF028FF5B888F986BF865A031;
+			remoteInfo = HCVimeoVideoExtractor;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0548EB33D441B4A91240D673AE12ACAA /* Pods-YML-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YML-Application.debug.xcconfig"; sourceTree = "<group>"; };
+		03CCAEC00C5AE302EB5FE542D5BBAF0B /* Pods-YML-Application-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YML-Application-dummy.m"; sourceTree = "<group>"; };
+		0C9A97B48AF22EBF0D174CD43F48BECF /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		1766CF06DF4D309996DA264215C1A696 /* Pods-YML-Application-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YML-Application-resources.sh"; sourceTree = "<group>"; };
+		1C62B0849EFEB8A23F96E106EE18B664 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		1D9D6E87177F963BEF92D3139232993D /* Pods_YML_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YML_Application.framework; path = "Pods-YML-Application.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE9BC5BEBFC69275F53D6AE3A369365 /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		521C05AB6AE7B9910A233B63B560FF70 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		551F63664537853F32071E13FE4CC4FF /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		5BEF52437C1E4AB431C3FBA86771C36E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		735EF32EFF249C4CDA871F2C9FDA1AC3 /* Pods-YML-Application-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YML-Application-acknowledgements.plist"; sourceTree = "<group>"; };
-		745B675E782206D02A22081B772E2E6A /* Pods-YML-Application-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YML-Application-dummy.m"; sourceTree = "<group>"; };
-		8C2B5D150CEE6BBB83CC0A67F1F8E93A /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		376908A4C84655815D5E762467A5F720 /* HCVimeoVideoExtractor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCVimeoVideoExtractor.xcconfig; sourceTree = "<group>"; };
+		4B75FE6A88412889E05FDD81A6BDF893 /* Pods-YML-Application-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YML-Application-acknowledgements.plist"; sourceTree = "<group>"; };
+		6652056F5FF8C1F2FA96BC88CCD00A25 /* HCVimeoVideoExtractor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HCVimeoVideoExtractor-Info.plist"; sourceTree = "<group>"; };
+		69607BEAA01C09B08D633C0FD8DEBEC2 /* HCVimeoVideoExtractor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HCVimeoVideoExtractor.modulemap; sourceTree = "<group>"; };
+		73C760B4659BEE20BDE87F27794BAFC8 /* Pods-YML-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YML-Application.debug.xcconfig"; sourceTree = "<group>"; };
+		873B7201000232A9A96A8F15180067A0 /* Pods-YML-Application-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YML-Application-umbrella.h"; sourceTree = "<group>"; };
+		8C0A98AC1370D23FFA9CBE443D5DBA24 /* HCVimeoVideoExtractor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCVimeoVideoExtractor-umbrella.h"; sourceTree = "<group>"; };
+		90F385D65E01123AE28FE5205478B2C2 /* HCVimeoVideoExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCVimeoVideoExtractor.swift; path = HCVimeoVideoExtractor/Classes/HCVimeoVideoExtractor.swift; sourceTree = "<group>"; };
+		927A4D194B934583446D21DE6F8F81F5 /* Pods-YML-Application-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YML-Application-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1AA573DF6FD7418E4A5A63C3EF41EE0 /* Pods-YML-Application-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YML-Application-Info.plist"; sourceTree = "<group>"; };
-		A5E0196138AD3726997C60278C7A7F37 /* Pods-YML-Application.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YML-Application.modulemap"; sourceTree = "<group>"; };
-		ABAA7F3B8E2701F16727C988CF7D105B /* Pods-YML-Application-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YML-Application-umbrella.h"; sourceTree = "<group>"; };
-		BE3A1EEA286CAA9A7B955A5834338BD3 /* Pods-YML-Application-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YML-Application-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
-		E9DB3AF32BB9A8335E47E20EC19155E5 /* Pods-YML-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YML-Application.release.xcconfig"; sourceTree = "<group>"; };
-		F625ED7E679AE680EC9BCF2CA4510B9C /* Pods-YML-Application-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YML-Application-resources.sh"; sourceTree = "<group>"; };
+		AC5486F06BFB1B3188AD6BD5D34C2932 /* HCVimeoVideoExtractor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCVimeoVideoExtractor-prefix.pch"; sourceTree = "<group>"; };
+		B3B9242CA7183C09F2D05CE97A1EACD7 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		D06C467C3C974EDEFBFE48BBE2389D21 /* HCVimeoVideoExtractor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HCVimeoVideoExtractor.framework; path = HCVimeoVideoExtractor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13C21E24C064DD976FB73AC72B1A943 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		D1E0DB6D1C0429417A37B726E93D705C /* Pods-YML-Application.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YML-Application.modulemap"; sourceTree = "<group>"; };
+		D3ECCB243268D2393B894CD3B011D955 /* HCVimeoVideoExtractor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HCVimeoVideoExtractor-dummy.m"; sourceTree = "<group>"; };
+		E407132779996B46845AF501EFCD1D82 /* Pods-YML-Application-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YML-Application-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E92839002B7EF32CA0478EEF77A63DD6 /* Pods-YML-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YML-Application.release.xcconfig"; sourceTree = "<group>"; };
+		EBC835113900BAEC4FD8AD6A04CDC498 /* HCVimeoVideo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCVimeoVideo.swift; path = HCVimeoVideoExtractor/Classes/HCVimeoVideo.swift; sourceTree = "<group>"; };
+		FEF8CE51279F72BAFF475DC2D94057B3 /* Pods-YML-Application-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YML-Application-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D498E8D61C6EB145A67C80AC5B9BA0C8 /* Frameworks */ = {
+		1C7BFB827BB8671441189C1E74B96B96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD998DA8775260C638DA6D58A3329B30 /* Foundation.framework in Frameworks */,
+				8DFE0BD27C53E3347B60163CFA51FEF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9EB8A2D4A5624715042248C1C35A397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D10B1BA071793BB5A762EA92E2523F7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06C1D2E5B8F557183D02B15F2A5BB240 /* Pods-YML-Application */ = {
+		24DBA5126565F6FAADEB12970C537D8B /* GoogleMaps */ = {
 			isa = PBXGroup;
 			children = (
-				A5E0196138AD3726997C60278C7A7F37 /* Pods-YML-Application.modulemap */,
-				BE3A1EEA286CAA9A7B955A5834338BD3 /* Pods-YML-Application-acknowledgements.markdown */,
-				735EF32EFF249C4CDA871F2C9FDA1AC3 /* Pods-YML-Application-acknowledgements.plist */,
-				745B675E782206D02A22081B772E2E6A /* Pods-YML-Application-dummy.m */,
-				A1AA573DF6FD7418E4A5A63C3EF41EE0 /* Pods-YML-Application-Info.plist */,
-				F625ED7E679AE680EC9BCF2CA4510B9C /* Pods-YML-Application-resources.sh */,
-				ABAA7F3B8E2701F16727C988CF7D105B /* Pods-YML-Application-umbrella.h */,
-				0548EB33D441B4A91240D673AE12ACAA /* Pods-YML-Application.debug.xcconfig */,
-				E9DB3AF32BB9A8335E47E20EC19155E5 /* Pods-YML-Application.release.xcconfig */,
-			);
-			name = "Pods-YML-Application";
-			path = "Target Support Files/Pods-YML-Application";
-			sourceTree = "<group>";
-		};
-		2C4EB33A076BB7654667F327222F2A96 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleMaps";
-			sourceTree = "<group>";
-		};
-		635C391EBEDEECEBED7C587C09F80C29 /* Maps */ = {
-			isa = PBXGroup;
-			children = (
-				7A2FE3E30CF6F7F1C609C86668A4411D /* Frameworks */,
-				CB4FFE30125DB944A69FABB13465CBF9 /* Resources */,
-			);
-			name = Maps;
-			sourceTree = "<group>";
-		};
-		6DC984D737DB841E41A9D175E8069AED /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				E31401A986F325F1E4863EC2F7E087C0 /* Frameworks */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		7A2FE3E30CF6F7F1C609C86668A4411D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5BEF52437C1E4AB431C3FBA86771C36E /* GoogleMaps.framework */,
-				8C2B5D150CEE6BBB83CC0A67F1F8E93A /* GoogleMapsCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A4F8F5B367216391D11B135C9A580041 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1D9D6E87177F963BEF92D3139232993D /* Pods_YML_Application.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AEB2EB54AE51001ACA52CF2A5CD80017 /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				6DC984D737DB841E41A9D175E8069AED /* Base */,
-				635C391EBEDEECEBED7C587C09F80C29 /* Maps */,
-				2C4EB33A076BB7654667F327222F2A96 /* Support Files */,
+				C988F6FB43A051F9449E2AA360230153 /* Base */,
+				F9B574871B99F67652B10F28F66BA2A7 /* Maps */,
+				C48B918ADB87D55CB956511765CD5AE4 /* Support Files */,
 			);
 			name = GoogleMaps;
 			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
-		B581967A35E280955933DF4247279264 /* Targets Support Files */ = {
+		2DD06B19BA4DE7213A58FDF7F6553A79 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				06C1D2E5B8F557183D02B15F2A5BB240 /* Pods-YML-Application */,
+				D13C21E24C064DD976FB73AC72B1A943 /* GoogleMaps.bundle */,
 			);
-			name = "Targets Support Files";
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		320FA5725BEC297D73F89AD4E91B1C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C62B0849EFEB8A23F96E106EE18B664 /* GoogleMaps.framework */,
+				B3B9242CA7183C09F2D05CE97A1EACD7 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35EB683602EA2984AAC01C6BF92CD625 /* Pods-YML-Application */ = {
+			isa = PBXGroup;
+			children = (
+				D1E0DB6D1C0429417A37B726E93D705C /* Pods-YML-Application.modulemap */,
+				E407132779996B46845AF501EFCD1D82 /* Pods-YML-Application-acknowledgements.markdown */,
+				4B75FE6A88412889E05FDD81A6BDF893 /* Pods-YML-Application-acknowledgements.plist */,
+				03CCAEC00C5AE302EB5FE542D5BBAF0B /* Pods-YML-Application-dummy.m */,
+				FEF8CE51279F72BAFF475DC2D94057B3 /* Pods-YML-Application-frameworks.sh */,
+				927A4D194B934583446D21DE6F8F81F5 /* Pods-YML-Application-Info.plist */,
+				1766CF06DF4D309996DA264215C1A696 /* Pods-YML-Application-resources.sh */,
+				873B7201000232A9A96A8F15180067A0 /* Pods-YML-Application-umbrella.h */,
+				73C760B4659BEE20BDE87F27794BAFC8 /* Pods-YML-Application.debug.xcconfig */,
+				E92839002B7EF32CA0478EEF77A63DD6 /* Pods-YML-Application.release.xcconfig */,
+			);
+			name = "Pods-YML-Application";
+			path = "Target Support Files/Pods-YML-Application";
+			sourceTree = "<group>";
+		};
+		6594E83F031082198B5CA8DD13B27490 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A97B48AF22EBF0D174CD43F48BECF /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C7768F62525C07621FECEAEB91CAFFB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69607BEAA01C09B08D633C0FD8DEBEC2 /* HCVimeoVideoExtractor.modulemap */,
+				376908A4C84655815D5E762467A5F720 /* HCVimeoVideoExtractor.xcconfig */,
+				D3ECCB243268D2393B894CD3B011D955 /* HCVimeoVideoExtractor-dummy.m */,
+				6652056F5FF8C1F2FA96BC88CCD00A25 /* HCVimeoVideoExtractor-Info.plist */,
+				AC5486F06BFB1B3188AD6BD5D34C2932 /* HCVimeoVideoExtractor-prefix.pch */,
+				8C0A98AC1370D23FFA9CBE443D5DBA24 /* HCVimeoVideoExtractor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HCVimeoVideoExtractor";
+			sourceTree = "<group>";
+		};
+		8EA94808AAE718A33F0BD8548004C342 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D06C467C3C974EDEFBFE48BBE2389D21 /* HCVimeoVideoExtractor.framework */,
+				1D9D6E87177F963BEF92D3139232993D /* Pods_YML_Application.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BCBD85CEF67C3A545C42366611DC6FE /* HCVimeoVideoExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				EBC835113900BAEC4FD8AD6A04CDC498 /* HCVimeoVideo.swift */,
+				90F385D65E01123AE28FE5205478B2C2 /* HCVimeoVideoExtractor.swift */,
+				7C7768F62525C07621FECEAEB91CAFFB /* Support Files */,
+			);
+			name = HCVimeoVideoExtractor;
+			path = HCVimeoVideoExtractor;
+			sourceTree = "<group>";
+		};
+		A39A1C245423EB47C4A34C34D30756CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24DBA5126565F6FAADEB12970C537D8B /* GoogleMaps */,
+				9BCBD85CEF67C3A545C42366611DC6FE /* HCVimeoVideoExtractor */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -153,12 +201,21 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CB4FFE30125DB944A69FABB13465CBF9 /* Resources */ = {
+		C48B918ADB87D55CB956511765CD5AE4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				521C05AB6AE7B9910A233B63B560FF70 /* GoogleMaps.bundle */,
+				2FE9BC5BEBFC69275F53D6AE3A369365 /* GoogleMaps.xcconfig */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		C988F6FB43A051F9449E2AA360230153 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6594E83F031082198B5CA8DD13B27490 /* Frameworks */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -166,9 +223,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				DF3634087891871FA7B65CC4A8E6DB71 /* Pods */,
-				A4F8F5B367216391D11B135C9A580041 /* Products */,
-				B581967A35E280955933DF4247279264 /* Targets Support Files */,
+				A39A1C245423EB47C4A34C34D30756CF /* Pods */,
+				8EA94808AAE718A33F0BD8548004C342 /* Products */,
+				EE33FE0546D2C17D256C4FE96AABD50A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,30 +237,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF3634087891871FA7B65CC4A8E6DB71 /* Pods */ = {
+		EE33FE0546D2C17D256C4FE96AABD50A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AEB2EB54AE51001ACA52CF2A5CD80017 /* GoogleMaps */,
+				35EB683602EA2984AAC01C6BF92CD625 /* Pods-YML-Application */,
 			);
-			name = Pods;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E31401A986F325F1E4863EC2F7E087C0 /* Frameworks */ = {
+		F9B574871B99F67652B10F28F66BA2A7 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				551F63664537853F32071E13FE4CC4FF /* GoogleMapsBase.framework */,
+				320FA5725BEC297D73F89AD4E91B1C5B /* Frameworks */,
+				2DD06B19BA4DE7213A58FDF7F6553A79 /* Resources */,
 			);
-			name = Frameworks;
+			name = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		76711326083427166E86EDA4C712DE17 /* Headers */ = {
+		50BE3D30990C4617B6F2AF7A99D06F87 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43CA0CEE60D5FABC4630C0E3C48AAC66 /* Pods-YML-Application-umbrella.h in Headers */,
+				59EDEA2ABA52E1FD91EA969D86E0776A /* HCVimeoVideoExtractor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E565902929D04AF409CEBE89A4D7A08B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19A2E8D5133E0F72A1EE46BC9B8A9A6 /* Pods-YML-Application-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,21 +278,40 @@
 /* Begin PBXNativeTarget section */
 		925BFA684C0F5C3ED47A606298CE864B /* Pods-YML-Application */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 238CC20625060741CAB08DB812E95154 /* Build configuration list for PBXNativeTarget "Pods-YML-Application" */;
+			buildConfigurationList = B69281A77744D1106BD3D00FFAE103FB /* Build configuration list for PBXNativeTarget "Pods-YML-Application" */;
 			buildPhases = (
-				76711326083427166E86EDA4C712DE17 /* Headers */,
-				9C747F49103CA27E26DEF5B7C2CAC2D7 /* Sources */,
-				D498E8D61C6EB145A67C80AC5B9BA0C8 /* Frameworks */,
-				C4254E2CA0121F451F462C24CC45DA04 /* Resources */,
+				E565902929D04AF409CEBE89A4D7A08B /* Headers */,
+				A46F0C817ED99A4C084C663646ED287C /* Sources */,
+				D9EB8A2D4A5624715042248C1C35A397 /* Frameworks */,
+				4C71B57A705275EE12E406BB29E93507 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E63D8718CEB530B68496224E61156532 /* PBXTargetDependency */,
+				693967BF16206BACDBA14877E8D83B51 /* PBXTargetDependency */,
+				449BEDEDD41B25183EBE85CABA18FEE0 /* PBXTargetDependency */,
 			);
 			name = "Pods-YML-Application";
 			productName = "Pods-YML-Application";
 			productReference = 1D9D6E87177F963BEF92D3139232993D /* Pods_YML_Application.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E939424EF028FF5B888F986BF865A031 /* HCVimeoVideoExtractor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F8CB0460C7C309DF0F5993B235606C /* Build configuration list for PBXNativeTarget "HCVimeoVideoExtractor" */;
+			buildPhases = (
+				50BE3D30990C4617B6F2AF7A99D06F87 /* Headers */,
+				7F5CBB8EFA83FA8100B3C29DE3349792 /* Sources */,
+				1C7BFB827BB8671441189C1E74B96B96 /* Frameworks */,
+				A4A452D385201AA248756DE0CC881D5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HCVimeoVideoExtractor;
+			productName = HCVimeoVideoExtractor;
+			productReference = D06C467C3C974EDEFBFE48BBE2389D21 /* HCVimeoVideoExtractor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -239,25 +324,33 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = A4F8F5B367216391D11B135C9A580041 /* Products */;
+			productRefGroup = 8EA94808AAE718A33F0BD8548004C342 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				E939424EF028FF5B888F986BF865A031 /* HCVimeoVideoExtractor */,
 				925BFA684C0F5C3ED47A606298CE864B /* Pods-YML-Application */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C4254E2CA0121F451F462C24CC45DA04 /* Resources */ = {
+		4C71B57A705275EE12E406BB29E93507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A452D385201AA248756DE0CC881D5B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,29 +360,120 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9C747F49103CA27E26DEF5B7C2CAC2D7 /* Sources */ = {
+		7F5CBB8EFA83FA8100B3C29DE3349792 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BF59899B68ABF5FF6F0AEF734490D0 /* Pods-YML-Application-dummy.m in Sources */,
+				DC544AF6ED65B495989AED4D88763D5D /* HCVimeoVideo.swift in Sources */,
+				B58DF731C73539435D7A351820C2A1C0 /* HCVimeoVideoExtractor-dummy.m in Sources */,
+				24D3D9FCBC683F45FF4A40C93C912A68 /* HCVimeoVideoExtractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46F0C817ED99A4C084C663646ED287C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61F604CA7AD2B30389043E2F9E2D5F8E /* Pods-YML-Application-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E63D8718CEB530B68496224E61156532 /* PBXTargetDependency */ = {
+		449BEDEDD41B25183EBE85CABA18FEE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HCVimeoVideoExtractor;
+			target = E939424EF028FF5B888F986BF865A031 /* HCVimeoVideoExtractor */;
+			targetProxy = 854E4196D3DB20DE74963BEBCC512A09 /* PBXContainerItemProxy */;
+		};
+		693967BF16206BACDBA14877E8D83B51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleMaps;
 			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = 7317591F126DAAE7F7F6ADF745BAD486 /* PBXContainerItemProxy */;
+			targetProxy = 3E3840FEF2C5657961A76134929E4856 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0EDBB170AEC54272FB26D6BEA8849786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92839002B7EF32CA0478EEF77A63DD6 /* Pods-YML-Application.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YML-Application/Pods-YML-Application-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YML-Application/Pods-YML-Application.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		28951B6B38D3233FF1CF6ED445F31657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376908A4C84655815D5E762467A5F720 /* HCVimeoVideoExtractor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HCVimeoVideoExtractor/HCVimeoVideoExtractor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HCVimeoVideoExtractor/HCVimeoVideoExtractor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HCVimeoVideoExtractor/HCVimeoVideoExtractor.modulemap";
+				PRODUCT_MODULE_NAME = HCVimeoVideoExtractor;
+				PRODUCT_NAME = HCVimeoVideoExtractor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4AA46832D8A16AA4E4811383B204D2A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */;
+			baseConfigurationReference = 2FE9BC5BEBFC69275F53D6AE3A369365 /* GoogleMaps.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -367,83 +551,6 @@
 			};
 			name = Debug;
 		};
-		6F0C208A85BCD94E76D151BC91FC851A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DB3AF32BB9A8335E47E20EC19155E5 /* Pods-YML-Application.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YML-Application/Pods-YML-Application-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YML-Application/Pods-YML-Application.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		84A748AEFE50899B7C0E60E3B1038D03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0548EB33D441B4A91240D673AE12ACAA /* Pods-YML-Application.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YML-Application/Pods-YML-Application-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YML-Application/Pods-YML-Application.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -506,7 +613,7 @@
 		};
 		C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */;
+			baseConfigurationReference = 2FE9BC5BEBFC69275F53D6AE3A369365 /* GoogleMaps.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -521,14 +628,87 @@
 			};
 			name = Release;
 		};
+		CD54A8DDEA8C84064A27CCC79BCDC171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376908A4C84655815D5E762467A5F720 /* HCVimeoVideoExtractor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HCVimeoVideoExtractor/HCVimeoVideoExtractor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HCVimeoVideoExtractor/HCVimeoVideoExtractor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HCVimeoVideoExtractor/HCVimeoVideoExtractor.modulemap";
+				PRODUCT_MODULE_NAME = HCVimeoVideoExtractor;
+				PRODUCT_NAME = HCVimeoVideoExtractor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE072C3B98320CF3EE3877ED8ED453D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C760B4659BEE20BDE87F27794BAFC8 /* Pods-YML-Application.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YML-Application/Pods-YML-Application-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YML-Application/Pods-YML-Application.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		238CC20625060741CAB08DB812E95154 /* Build configuration list for PBXNativeTarget "Pods-YML-Application" */ = {
+		00F8CB0460C7C309DF0F5993B235606C /* Build configuration list for PBXNativeTarget "HCVimeoVideoExtractor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84A748AEFE50899B7C0E60E3B1038D03 /* Debug */,
-				6F0C208A85BCD94E76D151BC91FC851A /* Release */,
+				CD54A8DDEA8C84064A27CCC79BCDC171 /* Debug */,
+				28951B6B38D3233FF1CF6ED445F31657 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -547,6 +727,15 @@
 			buildConfigurations = (
 				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
 				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B69281A77744D1106BD3D00FFAE103FB /* Build configuration list for PBXNativeTarget "Pods-YML-Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE072C3B98320CF3EE3877ED8ED453D5 /* Debug */,
+				0EDBB170AEC54272FB26D6BEA8849786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
