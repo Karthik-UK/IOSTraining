@@ -1,4 +1,3 @@
-
 import Foundation
 class NewsViewModel{
     func getFeatured() -> [News] {
@@ -7,20 +6,12 @@ class NewsViewModel{
     }
     
     func getDesign() -> [News] {
-        var designs : [News] = []
-        let mcd = News(image: "design1", category: "Agency / Culture / Design / Leadership / Technology", description: "We Are People: What it Means to Have a People-First Approach", url: "https://ymedialabs.com/we-are-people-what-it-means-to-have-a-people-first-approach")
-        let ux = News(image: "design2", category: "Design / Technology", description: "Speaking the Same Language: How UX and Data Strategy Can Work Together to Design for Voice-Based AI", url:"https://ymedialabs.com/voice-based-ai")
-        designs.append(mcd)
-        designs.append(ux)
+        let designs = [News(image: "design1", category: "Agency / Culture / Design / Leadership / Technology", description: "We Are People: What it Means to Have a People-First Approach", url: "https://ymedialabs.com/we-are-people-what-it-means-to-have-a-people-first-approach"), News(image: "design2", category: "Design / Technology", description: "Speaking the Same Language: How UX and Data Strategy Can Work Together to Design for Voice-Based AI", url:"https://ymedialabs.com/voice-based-ai")]
         return designs
     }
     
     func getEbooks() -> [News]{
-        var ebooks : [News] = []
-        let chatbots = News(image: "ebooks1", category: "Ebooks", description: "Chatbots in the Banking Industry – Discussing a More Efficient Future", url: "https://ymedialabs.com/chatbots-banking-industry-white-paper")
-        let app = News(image: "ebook2", category: "Ebooks", description: "How to Choose Wisely Between a Native and a Hybrid Application", url: "https://ymedialabs.com/native-hybrid-application-ebook")
-        ebooks.append(chatbots)
-        ebooks.append(app)
+        let ebooks = [News(image: "ebooks1", category: "Ebooks", description: "Chatbots in the Banking Industry – Discussing a More Efficient Future", url: "https://ymedialabs.com/chatbots-banking-industry-white-paper"),News(image: "ebook2", category: "Ebooks", description: "How to Choose Wisely Between a Native and a Hybrid Application", url: "https://ymedialabs.com/native-hybrid-application-ebook")]
         return ebooks
     }
 }

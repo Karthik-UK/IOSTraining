@@ -200,38 +200,29 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bx7-Av-egW">
-                                                    <rect key="frame" x="10" y="190" width="394" height="32.5"/>
+                                                    <rect key="frame" x="10" y="190" width="394" height="20.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mp-X7-aeh">
-                                                    <rect key="frame" x="10" y="242.5" width="394" height="0.0"/>
+                                                    <rect key="frame" x="10" y="230.5" width="394" height="415"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2QC-WV-KBu">
-                                                    <rect key="frame" x="20" y="650" width="374" height="5"/>
-                                                    <color key="backgroundColor" red="0.43496574700000001" green="0.47571399790000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="5" id="pXE-mP-RlO"/>
-                                                    </constraints>
-                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Bx7-Av-egW" firstAttribute="leading" secondItem="Smw-sn-w4F" secondAttribute="leading" constant="10" id="4dD-Fu-MfW"/>
                                                 <constraint firstItem="8mp-X7-aeh" firstAttribute="top" secondItem="Bx7-Av-egW" secondAttribute="bottom" constant="20" id="Bbn-9x-MqK"/>
                                                 <constraint firstItem="8mp-X7-aeh" firstAttribute="leading" secondItem="Smw-sn-w4F" secondAttribute="leading" constant="10" id="ChA-gr-1mh"/>
                                                 <constraint firstAttribute="trailing" secondItem="hou-o4-qfU" secondAttribute="trailing" constant="10" id="D55-Xk-efE"/>
-                                                <constraint firstItem="2QC-WV-KBu" firstAttribute="bottom" secondItem="Smw-sn-w4F" secondAttribute="bottomMargin" id="Dqg-UZ-04m"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="2QC-WV-KBu" secondAttribute="trailing" id="Fzd-4c-ECM"/>
-                                                <constraint firstItem="2QC-WV-KBu" firstAttribute="leading" secondItem="Smw-sn-w4F" secondAttribute="leadingMargin" id="Hxf-2o-iVN"/>
                                                 <constraint firstItem="Bx7-Av-egW" firstAttribute="top" secondItem="hou-o4-qfU" secondAttribute="bottom" constant="20" id="NtW-Qn-Bye"/>
                                                 <constraint firstItem="hou-o4-qfU" firstAttribute="top" secondItem="Smw-sn-w4F" secondAttribute="top" constant="10" id="Nuy-lF-50R"/>
                                                 <constraint firstAttribute="trailing" secondItem="8mp-X7-aeh" secondAttribute="trailing" constant="10" id="gsD-op-ZB7"/>
+                                                <constraint firstAttribute="bottom" secondItem="8mp-X7-aeh" secondAttribute="bottom" constant="20" id="jGX-Q6-dn4"/>
                                                 <constraint firstItem="hou-o4-qfU" firstAttribute="leading" secondItem="Smw-sn-w4F" secondAttribute="leading" constant="10" id="ohf-8n-xTb"/>
                                                 <constraint firstAttribute="trailing" secondItem="Bx7-Av-egW" secondAttribute="trailing" constant="10" id="qM4-k7-O5H"/>
                                             </constraints>
@@ -538,7 +529,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YMLlogo-jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="t7m-Z8-BN4">
-                                                    <rect key="frame" x="30" y="21" width="328.00000000000006" height="155.00000000000006"/>
+                                                    <rect key="frame" x="30" y="21" width="328" height="155"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="155" id="JQU-Zc-Gd3">
                                                             <variation key="heightClass=regular-widthClass=regular" constant="500"/>

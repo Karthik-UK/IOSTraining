@@ -3,13 +3,9 @@ import UIKit
 class NewsVC: UIViewController {
     var news :[News] = []
     let newsModel = NewsViewModel()
-    // create view Model Instance
-    
     @IBOutlet weak var segmentedOutlet: UISegmentedControl!
     @IBOutlet weak var newsTableView: UITableView!
-    
     @IBAction func onSelect(_ sender: Any) {
-
         switch segmentedOutlet.selectedSegmentIndex
         {
         case 0: news = newsModel.getFeatured()
@@ -22,16 +18,12 @@ class NewsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+       // newsTableView.s
+        newsTableView.separatorColor = .black
         news = newsModel.getFeatured()
-       // newsTableView.estimatedRowHeight = 100
-        //newsTableView.rowHeight = UITableView.automaticDimension
     }
 }
-
-
 extension NewsVC : UITableViewDataSource,UITableViewDelegate{
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return news.count
     }
@@ -42,11 +34,12 @@ extension NewsVC : UITableViewDataSource,UITableViewDelegate{
         cell.imageOutlet.image = UIImage(named: news[indexPath.row].imagenews)
         cell.labelOutlet.text = news[indexPath.row].categorynews
         cell.labelExplain.text = news[indexPath.row].descriptionnews
+        cell.selectionStyle = .none
         return cell
         }
         return Newcell()
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let webViewController = self.storyboard?.instantiateViewController(withIdentifier: String(describing: WebVC.self)) as? WebVC
         {
@@ -58,9 +51,8 @@ extension NewsVC : UITableViewDataSource,UITableViewDelegate{
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
        
-         return UIScreen.main.bounds.height
-         //return UITableView.automaticDimension
-        
+         //return UIScreen.main.bounds.height
+         return UITableView.automaticDimension
     }
     
     func randomclr()->UIColor{

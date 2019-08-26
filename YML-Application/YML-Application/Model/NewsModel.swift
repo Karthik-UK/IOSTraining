@@ -1,4 +1,3 @@
-
 import Foundation
 class News
 {
@@ -6,8 +5,6 @@ class News
     let categorynews: String
     let descriptionnews: String
     let urlnews: String
-    
-    
     init(image: String, category: String, description: String, url: String) {
         self.imagenews = image
         self.categorynews = category

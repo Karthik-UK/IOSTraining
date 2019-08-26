@@ -1,10 +1,8 @@
 import UIKit
-
 class WorkVC: UIViewController {
-
     @IBOutlet weak var tableView :UITableView!
     var workInform : [workConstants] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         WorkUIConstants()
