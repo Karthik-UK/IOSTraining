@@ -14,6 +14,8 @@
 		8F05C442231100EB003EE53D /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F05C441231100EB003EE53D /* ContactVC.swift */; };
 		8F06B975230D4E4E000A04E0 /* WorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B974230D4E4E000A04E0 /* WorkVC.swift */; };
 		8F06B977230D5276000A04E0 /* WorkCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B976230D5276000A04E0 /* WorkCellVC.swift */; };
+		8F06EAF12314F4DD00FA12C1 /* WalkThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EAF02314F4DD00FA12C1 /* WalkThrough.swift */; };
+		8F06EAF32314F56200FA12C1 /* WalkThroughVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EAF22314F56200FA12C1 /* WalkThroughVM.swift */; };
 		8F07AEA423139EDA006CCC54 /* CareerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F07AEA323139EDA006CCC54 /* CareerVC.swift */; };
 		8F0B6D85230AD7F00053C0F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */; };
 		8F19BB452311627E00EB2216 /* GoogleMapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */; };
@@ -21,13 +23,13 @@
 		8F83E6A0230FF9DF00827FA5 /* CheckingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F83E69E230FF9DF00827FA5 /* CheckingCell.xib */; };
 		8F83E6A22310009000827FA5 /* Newcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F83E6A12310009000827FA5 /* Newcell.swift */; };
 		8F98DF9D23044C5A007FFDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F98DF9C23044C5A007FFDC4 /* AppDelegate.swift */; };
-		8F98DF9F23044C5A007FFDC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F98DF9E23044C5A007FFDC4 /* ViewController.swift */; };
+		8F98DF9F23044C5A007FFDC4 /* WalkThroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F98DF9E23044C5A007FFDC4 /* WalkThroughVC.swift */; };
 		8F98DFA223044C5A007FFDC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F98DFA023044C5A007FFDC4 /* Main.storyboard */; };
 		8F98DFA423044C5B007FFDC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F98DFA323044C5B007FFDC4 /* Assets.xcassets */; };
 		8F98DFA723044C5B007FFDC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F98DFA523044C5B007FFDC4 /* LaunchScreen.storyboard */; };
 		8FCA9BEE2313BE67005AC926 /* CareerVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA9BED2313BE67005AC926 /* CareerVCCell.swift */; };
 		8FCA9BF12314287F005AC926 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA9BF02314287F005AC926 /* NewsModel.swift */; };
-		8FCA9BF4231428DE005AC926 /* NewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA9BF3231428DE005AC926 /* NewViewModel.swift */; };
+		8FCA9BF4231428DE005AC926 /* NewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA9BF3231428DE005AC926 /* NewVM.swift */; };
 		C161DF181858AB320285226A /* Pods_YML_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6420904AA9673075C75DA893 /* Pods_YML_Application.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		8F05C441231100EB003EE53D /* ContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
 		8F06B974230D4E4E000A04E0 /* WorkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkVC.swift; sourceTree = "<group>"; usesTabs = 0; };
 		8F06B976230D5276000A04E0 /* WorkCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCellVC.swift; sourceTree = "<group>"; };
+		8F06EAF02314F4DD00FA12C1 /* WalkThrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThrough.swift; sourceTree = "<group>"; };
+		8F06EAF22314F56200FA12C1 /* WalkThroughVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughVM.swift; sourceTree = "<group>"; };
 		8F07AEA323139EDA006CCC54 /* CareerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerVC.swift; sourceTree = "<group>"; };
 		8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsVC.swift; sourceTree = "<group>"; };
@@ -49,14 +53,14 @@
 		8F83E6A12310009000827FA5 /* Newcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newcell.swift; sourceTree = "<group>"; };
 		8F98DF9923044C5A007FFDC4 /* YML-Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YML-Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F98DF9C23044C5A007FFDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F98DF9E23044C5A007FFDC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F98DF9E23044C5A007FFDC4 /* WalkThroughVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughVC.swift; sourceTree = "<group>"; };
 		8F98DFA123044C5A007FFDC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F98DFA323044C5B007FFDC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F98DFA623044C5B007FFDC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F98DFA823044C5B007FFDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FCA9BED2313BE67005AC926 /* CareerVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerVCCell.swift; sourceTree = "<group>"; };
 		8FCA9BF02314287F005AC926 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
-		8FCA9BF3231428DE005AC926 /* NewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewModel.swift; sourceTree = "<group>"; };
+		8FCA9BF3231428DE005AC926 /* NewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVM.swift; sourceTree = "<group>"; };
 		FA18ECADEFFCDFA35CFF9686 /* Pods-YML-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YML-Application.release.xcconfig"; path = "Target Support Files/Pods-YML-Application/Pods-YML-Application.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +108,6 @@
 			children = (
 				8F98DF9C23044C5A007FFDC4 /* AppDelegate.swift */,
 				8FCA9BF2231428BB005AC926 /* ViewModel */,
-				8F98DF9E23044C5A007FFDC4 /* ViewController.swift */,
 				8F07AEA323139EDA006CCC54 /* CareerVC.swift */,
 				8F05C441231100EB003EE53D /* ContactVC.swift */,
 				8F06B976230D5276000A04E0 /* WorkCellVC.swift */,
@@ -112,6 +115,7 @@
 				8FCA9BEF2314284E005AC926 /* Model */,
 				8FCA9BED2313BE67005AC926 /* CareerVCCell.swift */,
 				8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */,
+				8F01BA32230EC81F0022C0C2 /* WebVC.swift */,
 				8F98DFA023044C5A007FFDC4 /* Main.storyboard */,
 				8F98DFA323044C5B007FFDC4 /* Assets.xcassets */,
 				8F98DFA523044C5B007FFDC4 /* LaunchScreen.storyboard */,
@@ -130,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				8FCA9BF02314287F005AC926 /* NewsModel.swift */,
+				8F06EAF02314F4DD00FA12C1 /* WalkThrough.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,7 +142,8 @@
 		8FCA9BF2231428BB005AC926 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				8FCA9BF3231428DE005AC926 /* NewViewModel.swift */,
+				8FCA9BF3231428DE005AC926 /* NewVM.swift */,
+				8F06EAF22314F56200FA12C1 /* WalkThroughVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -145,7 +151,7 @@
 		8FCA9BF523142929005AC926 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8F01BA32230EC81F0022C0C2 /* WebVC.swift */,
+				8F98DF9E23044C5A007FFDC4 /* WalkThroughVC.swift */,
 				8F048774230FA466004C43B0 /* NewsVC.swift */,
 				8F83E6A12310009000827FA5 /* Newcell.swift */,
 			);
@@ -296,7 +302,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F19BB452311627E00EB2216 /* GoogleMapsVC.swift in Sources */,
-				8F98DF9F23044C5A007FFDC4 /* ViewController.swift in Sources */,
+				8F06EAF32314F56200FA12C1 /* WalkThroughVM.swift in Sources */,
+				8F98DF9F23044C5A007FFDC4 /* WalkThroughVC.swift in Sources */,
 				8F83E69F230FF9DF00827FA5 /* CheckingCell.swift in Sources */,
 				8F05C442231100EB003EE53D /* ContactVC.swift in Sources */,
 				8F04877A230FF331004C43B0 /* DummyCell.swift in Sources */,
@@ -304,9 +311,10 @@
 				8F07AEA423139EDA006CCC54 /* CareerVC.swift in Sources */,
 				8FCA9BF12314287F005AC926 /* NewsModel.swift in Sources */,
 				8F98DF9D23044C5A007FFDC4 /* AppDelegate.swift in Sources */,
+				8F06EAF12314F4DD00FA12C1 /* WalkThrough.swift in Sources */,
 				8F06B977230D5276000A04E0 /* WorkCellVC.swift in Sources */,
 				8F048775230FA466004C43B0 /* NewsVC.swift in Sources */,
-				8FCA9BF4231428DE005AC926 /* NewViewModel.swift in Sources */,
+				8FCA9BF4231428DE005AC926 /* NewVM.swift in Sources */,
 				8F01BA33230EC81F0022C0C2 /* WebVC.swift in Sources */,
 				8F0B6D85230AD7F00053C0F2 /* CollectionViewCell.swift in Sources */,
 				8F83E6A22310009000827FA5 /* Newcell.swift in Sources */,
