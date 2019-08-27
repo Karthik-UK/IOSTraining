@@ -5,5 +5,6 @@ class WorkVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         workTab.WorkUIConstants()
+        tableView.separatorColor = .blue
     }
 }

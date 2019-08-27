@@ -35,7 +35,6 @@ extension NewsVC : UITableViewDataSource,UITableViewDelegate{
     }
     
     func cellDeclare(index:IndexPath) -> Newcell {
-        
         if let cell = newsTableView.dequeueReusableCell(withIdentifier: String(describing: Newcell.self), for: index) as? Newcell {
             cell.imageOutlet.image = UIImage(named: newsModel.news[index.row].imagenews)
             cell.labelOutlet.text = newsModel.news[index.row].categorynews

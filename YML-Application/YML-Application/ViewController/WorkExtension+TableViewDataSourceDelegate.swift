@@ -6,6 +6,7 @@ extension WorkVC : UITableViewDataSource{
             cell.imageViewer.image =  UIImage(named: workTab.workInform[index.row].workimage)
             cell.titleLabel.text = workTab.workInform[index.row].worktitle
             cell.descriptionLabel.text = workTab.workInform[index.row].workdescription
+            cell.selectionStyle = .none
             return cell }
         return WorkCellVC()
     }
