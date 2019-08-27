@@ -128,7 +128,7 @@
 				8FCA9BF2231428BB005AC926 /* ViewModel */,
 				8F07AEA323139EDA006CCC54 /* CareerVC.swift */,
 				8F05C441231100EB003EE53D /* ContactVC.swift */,
-				8FCA9BF523142929005AC926 /* ViewController */,
+				8FCA9BF523142929005AC926 /* View */,
 				8FCA9BEF2314284E005AC926 /* Model */,
 				8FCA9BED2313BE67005AC926 /* CareerVCCell.swift */,
 				8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */,
@@ -166,7 +166,7 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		8FCA9BF523142929005AC926 /* ViewController */ = {
+		8FCA9BF523142929005AC926 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				8F98DF9E23044C5A007FFDC4 /* WalkThroughVC.swift */,
@@ -182,7 +182,7 @@
 				8F06EB022315168E00FA12C1 /* NewsExtension+TableViewDatasourceDelegate.swift */,
 				8F06EB04231516F200FA12C1 /* NewsExtension+TableViewDelegate.swift */,
 			);
-			path = ViewController;
+			path = View;
 			sourceTree = "<group>";
 		};
 		F78FB8F87B100E6447DBCF44 /* Frameworks */ = {
