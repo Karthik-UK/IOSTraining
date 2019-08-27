@@ -7,7 +7,7 @@ class CareerVC: UIViewController {
     var playButton:UIButton?
     
     @IBOutlet weak var videoView: UIView!
-    var position = Members()
+    var position = CareerMV()
     @IBOutlet weak var careerTableView: UITableView!
     @IBAction func onClick(_ sender: Any) {
     }

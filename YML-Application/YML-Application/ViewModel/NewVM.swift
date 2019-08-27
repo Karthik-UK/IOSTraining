@@ -1,5 +1,5 @@
 import Foundation
-class NewsViewModel{
+class NewsVM{
     
     var news :[News] = []
     func getFeatured() {

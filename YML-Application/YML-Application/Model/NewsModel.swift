@@ -1,6 +1,11 @@
 import Foundation
 class News
 {
+    enum selection : Int{
+        case feature
+        case design
+        case ebook
+    }
     let imagenews: String
     let categorynews: String
     let descriptionnews: String
@@ -11,4 +16,6 @@ class News
         self.descriptionnews = description
         self.urlnews = url
     }
+    
 }
+

@@ -8,8 +8,7 @@ class ContactVC: UIViewController  {
     @IBOutlet weak var reWoodOutlet: UILabel!
     var tapBangalore: UITapGestureRecognizer!
     var tapRedwood: UITapGestureRecognizer!
-    var address = add()
-    var number = phone()
+    var contact = ContactVM()
     var caller = call()
     
     
@@ -29,23 +28,23 @@ class ContactVC: UIViewController  {
     @objc func showLocationOnMaps(_ sender: UITapGestureRecognizer){
         
         if sender == tapBangalore{
-            address.searchAddress = address.address2
+            contact.searchAddress = contact.address2
         }
         else{
-            address.searchAddress = address.address1
+            contact.searchAddress = contact.address1
         }
         if let webViewController = self.storyboard?.instantiateViewController(withIdentifier: String(describing: "GoogleMapsVC")) as? GoogleMapsVC
         {
-            webViewController.lat = address.searchAddress.0
-            webViewController.long = address.searchAddress.1
+            webViewController.lat = contact.searchAddress.0
+            webViewController.long = contact.searchAddress.1
             self.navigationController?.pushViewController(webViewController, animated: true)
         }
     }
 
     @objc func actionTapped(_ sender: UITapGestureRecognizer) {
         
-        if let phoneURL = URL(string: ("tel://" + number.numb)) {
-            self.present(caller.alert(phoneURL: phoneURL), animated: true, completion: nil)
+        if let phoneURL = URL(string: ("tel://" + contact.numb)) {
+           // self.present(caller.alert(phoneURL: phoneURL), animated: true, completion: nil)
             
         }
     }

@@ -1,7 +1,8 @@
 import Foundation
 import HCVimeoVideoExtractor
 import AVKit
-class Members{
+class CareerMV{
+    
     typealias jsonHandler = (() -> Void)
     
     let JsonString = "http://jsonstub.com/positions"
@@ -42,7 +43,7 @@ class Members{
     })
     session.resume()
 }
-}
+
 
 class videoPlayer{
     var  career = CareerVC()
@@ -67,8 +68,8 @@ class videoPlayer{
             
             let player = AVPlayer(url: videoURL)
             let playerLayer = AVPlayerLayer(player: player)
-            playerLayer.frame = self.career.videoView.frame
-            self.career.view.layer.addSublayer(playerLayer)
+          //  playerLayer.frame = self.career.videoView.frame
+           // self.career.view.layer.addSublayer(playerLayer)
             player.play()
             }
         })
@@ -77,3 +78,4 @@ class videoPlayer{
     
     
 
+}

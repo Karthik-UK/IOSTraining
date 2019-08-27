@@ -1,7 +1,7 @@
 import UIKit
 
 class NewsVC: UIViewController {
-    let newsModel = NewsViewModel()
+    let newsModel = NewsVM()
     @IBOutlet weak var segmentedOutlet: UISegmentedControl!
     @IBOutlet weak var newsTableView: UITableView!
     @IBAction func onSelect(_ sender: Any) {
@@ -19,5 +19,6 @@ class NewsVC: UIViewController {
         super.viewDidLoad()
         newsTableView.separatorColor = .black
         newsModel.getFeatured()
+        //dosomething()
     }
 }
