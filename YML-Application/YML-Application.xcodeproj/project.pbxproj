@@ -23,6 +23,13 @@
 		8F06EB01231510D400FA12C1 /* WorkExtension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EB00231510D400FA12C1 /* WorkExtension+TableViewDelegate.swift */; };
 		8F06EB032315168E00FA12C1 /* NewsExtension+TableViewDatasourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EB022315168E00FA12C1 /* NewsExtension+TableViewDatasourceDelegate.swift */; };
 		8F06EB05231516F200FA12C1 /* NewsExtension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EB04231516F200FA12C1 /* NewsExtension+TableViewDelegate.swift */; };
+		8F06EB07231529D100FA12C1 /* CareerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EB06231529D100FA12C1 /* CareerModel.swift */; };
+		8F06EB09231529EF00FA12C1 /* CareerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EB08231529EF00FA12C1 /* CareerVM.swift */; };
+		8F06EB0B23152FE200FA12C1 /* CareerExtension+TableviewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EB0A23152FE200FA12C1 /* CareerExtension+TableviewDelegate.swift */; };
+		8F06EB0D23152FF300FA12C1 /* CareerExtension+TableviewdatasourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EB0C23152FF300FA12C1 /* CareerExtension+TableviewdatasourceDelegate.swift */; };
+		8F06EB0F231537B500FA12C1 /* ContactExtensionMailComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EB0E231537B500FA12C1 /* ContactExtensionMailComp.swift */; };
+		8F06EB1123153AA600FA12C1 /* ContactVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EB1023153AA600FA12C1 /* ContactVM.swift */; };
+		8F06EB1323153CA600FA12C1 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EB1223153CA600FA12C1 /* AlertVC.swift */; };
 		8F07AEA423139EDA006CCC54 /* CareerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F07AEA323139EDA006CCC54 /* CareerVC.swift */; };
 		8F0B6D85230AD7F00053C0F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */; };
 		8F19BB452311627E00EB2216 /* GoogleMapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */; };
@@ -57,6 +64,13 @@
 		8F06EB00231510D400FA12C1 /* WorkExtension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkExtension+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		8F06EB022315168E00FA12C1 /* NewsExtension+TableViewDatasourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsExtension+TableViewDatasourceDelegate.swift"; sourceTree = "<group>"; };
 		8F06EB04231516F200FA12C1 /* NewsExtension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsExtension+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		8F06EB06231529D100FA12C1 /* CareerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerModel.swift; sourceTree = "<group>"; };
+		8F06EB08231529EF00FA12C1 /* CareerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerVM.swift; sourceTree = "<group>"; };
+		8F06EB0A23152FE200FA12C1 /* CareerExtension+TableviewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareerExtension+TableviewDelegate.swift"; sourceTree = "<group>"; };
+		8F06EB0C23152FF300FA12C1 /* CareerExtension+TableviewdatasourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareerExtension+TableviewdatasourceDelegate.swift"; sourceTree = "<group>"; };
+		8F06EB0E231537B500FA12C1 /* ContactExtensionMailComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactExtensionMailComp.swift; sourceTree = "<group>"; };
+		8F06EB1023153AA600FA12C1 /* ContactVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVM.swift; sourceTree = "<group>"; };
+		8F06EB1223153CA600FA12C1 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		8F07AEA323139EDA006CCC54 /* CareerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerVC.swift; sourceTree = "<group>"; };
 		8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsVC.swift; sourceTree = "<group>"; };
@@ -118,12 +132,8 @@
 			children = (
 				8F98DF9C23044C5A007FFDC4 /* AppDelegate.swift */,
 				8FCA9BF2231428BB005AC926 /* ViewModel */,
-				8F07AEA323139EDA006CCC54 /* CareerVC.swift */,
-				8F05C441231100EB003EE53D /* ContactVC.swift */,
 				8FCA9BF523142929005AC926 /* View */,
 				8FCA9BEF2314284E005AC926 /* Model */,
-				8FCA9BED2313BE67005AC926 /* CareerVCCell.swift */,
-				8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */,
 				8F98DFA323044C5B007FFDC4 /* Assets.xcassets */,
 				8F98DFA823044C5B007FFDC4 /* Info.plist */,
 			);
@@ -133,9 +143,10 @@
 		8FCA9BEF2314284E005AC926 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8F06EAF02314F4DD00FA12C1 /* WalkThroughModel.swift */,
 				8FCA9BF02314287F005AC926 /* NewsModel.swift */,
 				8F06EAF42314FFD700FA12C1 /* WorkModel.swift */,
-				8F06EAF02314F4DD00FA12C1 /* WalkThroughModel.swift */,
+				8F06EB06231529D100FA12C1 /* CareerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				8FCA9BF3231428DE005AC926 /* NewVM.swift */,
+				8F06EB1023153AA600FA12C1 /* ContactVM.swift */,
+				8F06EB08231529EF00FA12C1 /* CareerVM.swift */,
 				8F06EAF22314F56200FA12C1 /* WalkThroughVM.swift */,
 				8F06EAF62315000B00FA12C1 /* WorkVM.swift */,
 			);
@@ -169,6 +182,14 @@
 				8F06EB04231516F200FA12C1 /* NewsExtension+TableViewDelegate.swift */,
 				8F83E6A12310009000827FA5 /* Newcell.swift */,
 				8F01BA32230EC81F0022C0C2 /* WebVC.swift */,
+				8F07AEA323139EDA006CCC54 /* CareerVC.swift */,
+				8F06EB0C23152FF300FA12C1 /* CareerExtension+TableviewdatasourceDelegate.swift */,
+				8F06EB0A23152FE200FA12C1 /* CareerExtension+TableviewDelegate.swift */,
+				8FCA9BED2313BE67005AC926 /* CareerVCCell.swift */,
+				8F05C441231100EB003EE53D /* ContactVC.swift */,
+				8F06EB0E231537B500FA12C1 /* ContactExtensionMailComp.swift */,
+				8F06EB1223153CA600FA12C1 /* AlertVC.swift */,
+				8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,13 +336,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F19BB452311627E00EB2216 /* GoogleMapsVC.swift in Sources */,
+				8F06EB07231529D100FA12C1 /* CareerModel.swift in Sources */,
+				8F06EB09231529EF00FA12C1 /* CareerVM.swift in Sources */,
 				8F06EAF32314F56200FA12C1 /* WalkThroughVM.swift in Sources */,
 				8F98DF9F23044C5A007FFDC4 /* WalkThroughVC.swift in Sources */,
+				8F06EB0D23152FF300FA12C1 /* CareerExtension+TableviewdatasourceDelegate.swift in Sources */,
+				8F06EB1123153AA600FA12C1 /* ContactVM.swift in Sources */,
 				8F06EB01231510D400FA12C1 /* WorkExtension+TableViewDelegate.swift in Sources */,
 				8F05C442231100EB003EE53D /* ContactVC.swift in Sources */,
 				8F06EAFB23150E9600FA12C1 /* WalkThroughextension+collectionViewdelegate.swift in Sources */,
 				8F06EAFD23150FD000FA12C1 /* WalkThroughextension+collectionViewDataSourceDelegate.swift in Sources */,
 				8FCA9BEE2313BE67005AC926 /* CareerVCCell.swift in Sources */,
+				8F06EB0B23152FE200FA12C1 /* CareerExtension+TableviewDelegate.swift in Sources */,
 				8F07AEA423139EDA006CCC54 /* CareerVC.swift in Sources */,
 				8FCA9BF12314287F005AC926 /* NewsModel.swift in Sources */,
 				8F06EAF923150DEC00FA12C1 /* WalkThroughExtension+CollectionViewLayoutDelegate.swift in Sources */,
@@ -334,8 +360,10 @@
 				8F048775230FA466004C43B0 /* NewsVC.swift in Sources */,
 				8FCA9BF4231428DE005AC926 /* NewVM.swift in Sources */,
 				8F01BA33230EC81F0022C0C2 /* WebVC.swift in Sources */,
+				8F06EB1323153CA600FA12C1 /* AlertVC.swift in Sources */,
 				8F0B6D85230AD7F00053C0F2 /* CollectionViewCell.swift in Sources */,
 				8F83E6A22310009000827FA5 /* Newcell.swift in Sources */,
+				8F06EB0F231537B500FA12C1 /* ContactExtensionMailComp.swift in Sources */,
 				8F06EAF52314FFD700FA12C1 /* WorkModel.swift in Sources */,
 				8F06EB032315168E00FA12C1 /* NewsExtension+TableViewDatasourceDelegate.swift in Sources */,
 				8F06B975230D4E4E000A04E0 /* WorkVC.swift in Sources */,
