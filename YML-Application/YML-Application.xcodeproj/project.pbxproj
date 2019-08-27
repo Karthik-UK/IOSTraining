@@ -14,8 +14,15 @@
 		8F05C442231100EB003EE53D /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F05C441231100EB003EE53D /* ContactVC.swift */; };
 		8F06B975230D4E4E000A04E0 /* WorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B974230D4E4E000A04E0 /* WorkVC.swift */; };
 		8F06B977230D5276000A04E0 /* WorkCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06B976230D5276000A04E0 /* WorkCellVC.swift */; };
-		8F06EAF12314F4DD00FA12C1 /* WalkThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EAF02314F4DD00FA12C1 /* WalkThrough.swift */; };
+		8F06EAF12314F4DD00FA12C1 /* WalkThroughModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EAF02314F4DD00FA12C1 /* WalkThroughModel.swift */; };
 		8F06EAF32314F56200FA12C1 /* WalkThroughVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EAF22314F56200FA12C1 /* WalkThroughVM.swift */; };
+		8F06EAF52314FFD700FA12C1 /* WorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EAF42314FFD700FA12C1 /* WorkModel.swift */; };
+		8F06EAF72315000B00FA12C1 /* WorkVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EAF62315000B00FA12C1 /* WorkVM.swift */; };
+		8F06EAF923150DEC00FA12C1 /* WalkThroughExtension+CollectionViewLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EAF823150DEB00FA12C1 /* WalkThroughExtension+CollectionViewLayoutDelegate.swift */; };
+		8F06EAFB23150E9600FA12C1 /* WalkThroughextension+collectionViewdelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EAFA23150E9600FA12C1 /* WalkThroughextension+collectionViewdelegate.swift */; };
+		8F06EAFD23150FD000FA12C1 /* WalkThroughextension+collectionViewDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EAFC23150FD000FA12C1 /* WalkThroughextension+collectionViewDataSourceDelegate.swift */; };
+		8F06EAFF2315107E00FA12C1 /* WorkExtension+TableViewDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EAFE2315107E00FA12C1 /* WorkExtension+TableViewDataSourceDelegate.swift */; };
+		8F06EB01231510D400FA12C1 /* WorkExtension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06EB00231510D400FA12C1 /* WorkExtension+TableViewDelegate.swift */; };
 		8F07AEA423139EDA006CCC54 /* CareerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F07AEA323139EDA006CCC54 /* CareerVC.swift */; };
 		8F0B6D85230AD7F00053C0F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */; };
 		8F19BB452311627E00EB2216 /* GoogleMapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */; };
@@ -43,8 +50,15 @@
 		8F05C441231100EB003EE53D /* ContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
 		8F06B974230D4E4E000A04E0 /* WorkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkVC.swift; sourceTree = "<group>"; usesTabs = 0; };
 		8F06B976230D5276000A04E0 /* WorkCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCellVC.swift; sourceTree = "<group>"; };
-		8F06EAF02314F4DD00FA12C1 /* WalkThrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThrough.swift; sourceTree = "<group>"; };
+		8F06EAF02314F4DD00FA12C1 /* WalkThroughModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughModel.swift; sourceTree = "<group>"; };
 		8F06EAF22314F56200FA12C1 /* WalkThroughVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughVM.swift; sourceTree = "<group>"; };
+		8F06EAF42314FFD700FA12C1 /* WorkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkModel.swift; sourceTree = "<group>"; };
+		8F06EAF62315000B00FA12C1 /* WorkVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkVM.swift; sourceTree = "<group>"; };
+		8F06EAF823150DEB00FA12C1 /* WalkThroughExtension+CollectionViewLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WalkThroughExtension+CollectionViewLayoutDelegate.swift"; sourceTree = "<group>"; };
+		8F06EAFA23150E9600FA12C1 /* WalkThroughextension+collectionViewdelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WalkThroughextension+collectionViewdelegate.swift"; sourceTree = "<group>"; };
+		8F06EAFC23150FD000FA12C1 /* WalkThroughextension+collectionViewDataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WalkThroughextension+collectionViewDataSourceDelegate.swift"; sourceTree = "<group>"; };
+		8F06EAFE2315107E00FA12C1 /* WorkExtension+TableViewDataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkExtension+TableViewDataSourceDelegate.swift"; sourceTree = "<group>"; };
+		8F06EB00231510D400FA12C1 /* WorkExtension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkExtension+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		8F07AEA323139EDA006CCC54 /* CareerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerVC.swift; sourceTree = "<group>"; };
 		8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		8F19BB442311627E00EB2216 /* GoogleMapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsVC.swift; sourceTree = "<group>"; };
@@ -110,7 +124,6 @@
 				8FCA9BF2231428BB005AC926 /* ViewModel */,
 				8F07AEA323139EDA006CCC54 /* CareerVC.swift */,
 				8F05C441231100EB003EE53D /* ContactVC.swift */,
-				8F06B976230D5276000A04E0 /* WorkCellVC.swift */,
 				8FCA9BF523142929005AC926 /* ViewController */,
 				8FCA9BEF2314284E005AC926 /* Model */,
 				8FCA9BED2313BE67005AC926 /* CareerVCCell.swift */,
@@ -121,7 +134,6 @@
 				8F98DFA523044C5B007FFDC4 /* LaunchScreen.storyboard */,
 				8F98DFA823044C5B007FFDC4 /* Info.plist */,
 				8F0B6D84230AD7F00053C0F2 /* CollectionViewCell.swift */,
-				8F06B974230D4E4E000A04E0 /* WorkVC.swift */,
 				8F048778230FF331004C43B0 /* DummyCell.swift */,
 				8F048779230FF331004C43B0 /* DummyCell.xib */,
 				8F83E69D230FF9DF00827FA5 /* CheckingCell.swift */,
@@ -134,7 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				8FCA9BF02314287F005AC926 /* NewsModel.swift */,
-				8F06EAF02314F4DD00FA12C1 /* WalkThrough.swift */,
+				8F06EAF42314FFD700FA12C1 /* WorkModel.swift */,
+				8F06EAF02314F4DD00FA12C1 /* WalkThroughModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +157,7 @@
 			children = (
 				8FCA9BF3231428DE005AC926 /* NewVM.swift */,
 				8F06EAF22314F56200FA12C1 /* WalkThroughVM.swift */,
+				8F06EAF62315000B00FA12C1 /* WorkVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -152,8 +166,15 @@
 			isa = PBXGroup;
 			children = (
 				8F98DF9E23044C5A007FFDC4 /* WalkThroughVC.swift */,
+				8F06EAFC23150FD000FA12C1 /* WalkThroughextension+collectionViewDataSourceDelegate.swift */,
 				8F048774230FA466004C43B0 /* NewsVC.swift */,
+				8F06B974230D4E4E000A04E0 /* WorkVC.swift */,
+				8F06B976230D5276000A04E0 /* WorkCellVC.swift */,
+				8F06EAFA23150E9600FA12C1 /* WalkThroughextension+collectionViewdelegate.swift */,
 				8F83E6A12310009000827FA5 /* Newcell.swift */,
+				8F06EAF823150DEB00FA12C1 /* WalkThroughExtension+CollectionViewLayoutDelegate.swift */,
+				8F06EAFE2315107E00FA12C1 /* WorkExtension+TableViewDataSourceDelegate.swift */,
+				8F06EB00231510D400FA12C1 /* WorkExtension+TableViewDelegate.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -305,19 +326,26 @@
 				8F06EAF32314F56200FA12C1 /* WalkThroughVM.swift in Sources */,
 				8F98DF9F23044C5A007FFDC4 /* WalkThroughVC.swift in Sources */,
 				8F83E69F230FF9DF00827FA5 /* CheckingCell.swift in Sources */,
+				8F06EB01231510D400FA12C1 /* WorkExtension+TableViewDelegate.swift in Sources */,
 				8F05C442231100EB003EE53D /* ContactVC.swift in Sources */,
 				8F04877A230FF331004C43B0 /* DummyCell.swift in Sources */,
+				8F06EAFB23150E9600FA12C1 /* WalkThroughextension+collectionViewdelegate.swift in Sources */,
+				8F06EAFD23150FD000FA12C1 /* WalkThroughextension+collectionViewDataSourceDelegate.swift in Sources */,
 				8FCA9BEE2313BE67005AC926 /* CareerVCCell.swift in Sources */,
 				8F07AEA423139EDA006CCC54 /* CareerVC.swift in Sources */,
 				8FCA9BF12314287F005AC926 /* NewsModel.swift in Sources */,
+				8F06EAF923150DEC00FA12C1 /* WalkThroughExtension+CollectionViewLayoutDelegate.swift in Sources */,
+				8F06EAF72315000B00FA12C1 /* WorkVM.swift in Sources */,
+				8F06EAFF2315107E00FA12C1 /* WorkExtension+TableViewDataSourceDelegate.swift in Sources */,
 				8F98DF9D23044C5A007FFDC4 /* AppDelegate.swift in Sources */,
-				8F06EAF12314F4DD00FA12C1 /* WalkThrough.swift in Sources */,
+				8F06EAF12314F4DD00FA12C1 /* WalkThroughModel.swift in Sources */,
 				8F06B977230D5276000A04E0 /* WorkCellVC.swift in Sources */,
 				8F048775230FA466004C43B0 /* NewsVC.swift in Sources */,
 				8FCA9BF4231428DE005AC926 /* NewVM.swift in Sources */,
 				8F01BA33230EC81F0022C0C2 /* WebVC.swift in Sources */,
 				8F0B6D85230AD7F00053C0F2 /* CollectionViewCell.swift in Sources */,
 				8F83E6A22310009000827FA5 /* Newcell.swift in Sources */,
+				8F06EAF52314FFD700FA12C1 /* WorkModel.swift in Sources */,
 				8F06B975230D4E4E000A04E0 /* WorkVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

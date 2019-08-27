@@ -30,7 +30,6 @@ class CareerVC: UIViewController {
     }
     func loadPositionsFromJson(){
         guard let url = URL(string: "http://jsonstub.com/positions") else { return }
-        
         var request = URLRequest(url: url)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("5b87065d-b207-44fc-aa26-b9e1253720d6", forHTTPHeaderField: "JsonStub-User-Key")
