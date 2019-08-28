@@ -1,7 +1,9 @@
 import UIKit
 import MessageUI
 import GoogleMaps
-class ContactVC: UIViewController  {
+class ContactVC: BaseVC {
+    var phno = "8152024536"
+    var phoneurl = URL(string :"8152024536")
     @IBOutlet weak var titleTag: UILabel!
     @IBOutlet weak var onClickCall: UILabel!
     @IBOutlet weak var BangaloreOutlet: UILabel!
@@ -9,12 +11,14 @@ class ContactVC: UIViewController  {
     var tapBangalore: UITapGestureRecognizer!
     var tapRedwood: UITapGestureRecognizer!
     var contact = ContactVM()
-    var caller = call()
+   
+   // var caller = call()
     
     
     @IBOutlet weak var emailOutlet: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let tapDial = UITapGestureRecognizer(target:self, action: Selector(("actionTapped:")))
         let tapMail = UITapGestureRecognizer(target:self, action: Selector(("sendEmail:")))
         tapBangalore = UITapGestureRecognizer(target:self, action: Selector(("showLocationOnMaps:")))
@@ -23,6 +27,7 @@ class ContactVC: UIViewController  {
         emailOutlet.addGestureRecognizer(tapMail)
         BangaloreOutlet.addGestureRecognizer(tapBangalore)
         reWoodOutlet.addGestureRecognizer(tapRedwood)
+       
     }
 
     @objc func showLocationOnMaps(_ sender: UITapGestureRecognizer){
@@ -43,12 +48,12 @@ class ContactVC: UIViewController  {
 
     @objc func actionTapped(_ sender: UITapGestureRecognizer) {
         
-        if let phoneURL = URL(string: ("tel://" + contact.numb)) {
-           // self.present(caller.alert(phoneURL: phoneURL), animated: true, completion: nil)
-            
+        showAlert(message: "Phone", title: "djvdkjfnvfkvnfdvnfvn", arrofBtnTitles: ["Ok", "No", "Cancel"], type: .alert, phoneURL: phoneurl!)
+//        showAlertforPhone( message:phno , title: "Want to call", ok: true ,NO: true, phoneURL : phoneurl!,type:.alert)
+//
         }
     }
-    }
+
 
 
 

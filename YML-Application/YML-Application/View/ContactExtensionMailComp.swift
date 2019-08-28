@@ -16,6 +16,7 @@ extension ContactVC: MFMailComposeViewControllerDelegate{
     }
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
+        showAlert(message: "Phone", title: "djvdkjfnvfkvnfdvnfvn", arrofBtnTitles: ["Ok", "Error"], type: .alert)
     }
     
 }
