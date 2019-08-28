@@ -1,6 +1,6 @@
 
 import UIKit
-class CareerVCCell: UITableViewCell {
+class CareerVCCell: BaseTVCell {
 
     @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var label2: UILabel!

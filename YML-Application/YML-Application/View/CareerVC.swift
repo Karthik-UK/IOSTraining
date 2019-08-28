@@ -2,7 +2,7 @@ import UIKit
 import AVKit
 import HCVimeoVideoExtractor
 
-class CareerVC: UIViewController {
+class CareerVC: BaseVC {
     var player:AVPlayer?
     var playButton:UIButton?
     

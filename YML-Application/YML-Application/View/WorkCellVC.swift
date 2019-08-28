@@ -1,6 +1,6 @@
 import UIKit
 
-class WorkCellVC: UITableViewCell {
+class WorkCellVC: BaseTVCell {
     @IBOutlet weak var imageViewer: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!

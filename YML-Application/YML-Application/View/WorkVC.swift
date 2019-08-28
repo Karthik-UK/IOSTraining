@@ -1,5 +1,5 @@
 import UIKit
-class WorkVC: UIViewController {
+class WorkVC: BaseVC {
     @IBOutlet weak var tableView :UITableView!
     var workTab = WorkVM()
     override func viewDidLoad() {

@@ -1,5 +1,5 @@
 import UIKit
-class ViewController: UIViewController{
+class ViewController: BaseVC{
     @IBOutlet weak var pageIndicator: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var buttonUI: UIButton!

@@ -15,7 +15,7 @@ class ContactVC: BaseVC {
         super.viewDidLoad()
         
         let tapDial = UITapGestureRecognizer(target:self, action: Selector(("actionTapped:")))
-        let tapMail = UITapGestureRecognizer(target:self, action: Selector(("sendEmail:")))
+        let tapMail = UITapGestureRecognizer(target:self, action: #selector(BaseVC.sendEmail(_:)))
         tapBangalore = UITapGestureRecognizer(target:self, action: Selector(("showLocationOnMaps:")))
         tapRedwood = UITapGestureRecognizer(target:self, action: Selector(("showLocationOnMaps:")))
         onClickCall.addGestureRecognizer(tapDial)
@@ -43,8 +43,7 @@ class ContactVC: BaseVC {
 
     @objc func actionTapped(_ sender: UITapGestureRecognizer) {
         let phno = "8152024536"
-        guard let  phoneurl = URL(string :phno) else { return }
-        showAlert(message: phno, title: "Want to Call", arrofBtnTitles: ["Ok","Cancel"], type: .alert, phoneURL: phoneurl)
+        showAlert(message: phno, title: "Want to Call", arrofBtns: [BtnAction(title: "Ok", actionType: .phone) , BtnAction(title: "Cancel", actionType: .noAction)], type: .alert,phonenumber: phno,Action: .phone)
 
         }
     }

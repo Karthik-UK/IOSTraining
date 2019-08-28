@@ -1,6 +1,6 @@
 import UIKit
 
-class NewsVC: UIViewController {
+class NewsVC: BaseVC {
     let newsModel = NewsVM()
     @IBOutlet weak var segmentedOutlet: UISegmentedControl!
     @IBOutlet weak var newsTableView: UITableView!

@@ -27,11 +27,10 @@ class CareerMV{
             }
         })
     }
-    
-    class head{
+
+struct head{
         let JsonString = "http://jsonstub.com/positions"
         var headers = ["Content-Type": "application/json", "JsonStub-User-Key" :"5b87065d-b207-44fc-aa26-b9e1253720d6", "JsonStub-Project-Key": "9a5070e8-cd53-46d4-ae0a-c25f3458c81c"]
-        
 
     }
     
