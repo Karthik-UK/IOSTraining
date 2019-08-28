@@ -12,8 +12,8 @@ class NetworkManager: HTTPMETHODS{
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
         if let headers = headers{
-            for (k,v) in headers{
-                urlRequest.addValue(v, forHTTPHeaderField: k)
+            for (key,value) in headers{
+                urlRequest.addValue(value, forHTTPHeaderField: key)
             }
         }
         URLSession.shared.dataTask(with: urlRequest, completionHandler: { [weak self] (data, response, error) in

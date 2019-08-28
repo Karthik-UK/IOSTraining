@@ -1,21 +1,12 @@
 import Foundation
 import HCVimeoVideoExtractor
 import AVKit
-
 class CareerMV{
-    
+    var stat = head()
     typealias jsonHandler = (() -> Void)
-    var jsonItems: [Opening] = []
-    
-    let JsonString = "http://jsonstub.com/positions"
-    let userKey = "5b87065d-b207-44fc-aa26-b9e1253720d6"
-    let ProjectKey = "9a5070e8-cd53-46d4-ae0a-c25f3458c81c"
-  
-   
+    var jsonItems: [Open] = []
     func loadPositionsFromJson(_ compHandler: @escaping jsonHandler){
-        
-        var headers = ["Content-Type": "application/json", "JsonStub-User-Key" : userKey, "JsonStub-Project-Key": ProjectKey]
-        NetworkManager.shared.get(urlString: JsonString, headers: headers, successHandler: {
+        NetworkManager.shared.get(urlString: stat.JsonString, headers: stat.headers, successHandler: {
             [self] (data) in
             do{
                 let root = try JSONDecoder().decode(Root.self, from: data)
@@ -37,7 +28,12 @@ class CareerMV{
         })
     }
     
-    
+    class head{
+        let JsonString = "http://jsonstub.com/positions"
+        var headers = ["Content-Type": "application/json", "JsonStub-User-Key" :"5b87065d-b207-44fc-aa26-b9e1253720d6", "JsonStub-Project-Key": "9a5070e8-cd53-46d4-ae0a-c25f3458c81c"]
+        
+
+    }
     
     
     

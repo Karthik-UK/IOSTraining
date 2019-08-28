@@ -1,9 +1,9 @@
 import Foundation
 struct Root: Decodable{
-    let data: [Opening]
+    let data: [Open]
 }
 
-struct Opening: Decodable{
+struct Open: Decodable{
     let domain: String
     let position: String
     let location: String
