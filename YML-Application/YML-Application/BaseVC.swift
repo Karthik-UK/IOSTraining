@@ -1,19 +1,4 @@
-
 import UIKit
-
-class CustomAction : UIAlertAction {
-    var btnType: Int?
-    
-    override init() {
-        super.init()
-    }
-}
-
-enum ActionType: Int {
-    case phone
-    case mail
-    case noAction
-}
 
 class BaseVC: UIViewController {
     override func viewDidLoad() {
@@ -22,13 +7,9 @@ class BaseVC: UIViewController {
     
     func showAlert( message: String, title : String, arrofBtnTitles: [String], type : UIAlertController.Style,phoneURL : URL? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: type)
-        
+
         let action = CustomAction(title: "btnTitle", style: UIAlertAction.Style.default, handler: { (action) in
-            debugPrint(action)
-            
-            // open url
-            // Open Mail
-            // No Action
+           //some type
         })
         action.btnType = 1
         for btnTitle in arrofBtnTitles {
@@ -46,7 +27,7 @@ class BaseVC: UIViewController {
 //            let alertAction = UIAlertAction(title: String?, style: <#T##UIAlertAction.Style#>, handler: <#T##((UIAlertAction) -> Void)?##((UIAlertAction) -> Void)?##(UIAlertAction) -> Void#>)
 //                alertAction.
 //        {alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
-//                UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
+//
 //                }))}
 //        if NO == true
 //        {alert.addAction(UIAlertAction(title: "NO", style: UIAlertAction.Style.default, handler: nil))}
@@ -61,6 +42,18 @@ class BaseVC: UIViewController {
 //        {alert.addAction(UIAlertAction(title: "Error", style: UIAlertAction.Style.default, handler: nil))}
 //        self.present(alert, animated: true, completion: nil)
 //    }
+    class CustomAction : UIAlertAction {
+        var btnType: Int?
+        override init() {
+            super.init()
+        }
+    }
     
+    enum ActionType: Int {
+        case phone
+        case mail
+        case noAction
+    }
+
 
 }

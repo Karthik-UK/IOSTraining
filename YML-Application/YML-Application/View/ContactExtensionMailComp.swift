@@ -1,9 +1,10 @@
 import Foundation
 import UIKit
 import MessageUI
-extension ContactVC: MFMailComposeViewControllerDelegate{
+extension BaseVC: MFMailComposeViewControllerDelegate{
     @objc func sendEmail(_ sender: UITapGestureRecognizer)
     {
+        
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
@@ -16,7 +17,7 @@ extension ContactVC: MFMailComposeViewControllerDelegate{
     }
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
-        showAlert(message: "Phone", title: "djvdkjfnvfkvnfdvnfvn", arrofBtnTitles: ["Ok", "Error"], type: .alert)
+        showAlert(message: "Mail", title: "djvdkjfnvfkvnfdvnfvn", arrofBtnTitles: ["Ok", "Error"], type: .alert)
     }
     
 }

@@ -2,8 +2,7 @@ import UIKit
 import MessageUI
 import GoogleMaps
 class ContactVC: BaseVC {
-    var phno = "8152024536"
-    var phoneurl = URL(string :"8152024536")
+   
     @IBOutlet weak var titleTag: UILabel!
     @IBOutlet weak var onClickCall: UILabel!
     @IBOutlet weak var BangaloreOutlet: UILabel!
@@ -11,10 +10,6 @@ class ContactVC: BaseVC {
     var tapBangalore: UITapGestureRecognizer!
     var tapRedwood: UITapGestureRecognizer!
     var contact = ContactVM()
-   
-   // var caller = call()
-    
-    
     @IBOutlet weak var emailOutlet: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,10 +42,10 @@ class ContactVC: BaseVC {
     }
 
     @objc func actionTapped(_ sender: UITapGestureRecognizer) {
-        
-        showAlert(message: "Phone", title: "djvdkjfnvfkvnfdvnfvn", arrofBtnTitles: ["Ok", "No", "Cancel"], type: .alert, phoneURL: phoneurl!)
-//        showAlertforPhone( message:phno , title: "Want to call", ok: true ,NO: true, phoneURL : phoneurl!,type:.alert)
-//
+        let phno = "8152024536"
+        guard let  phoneurl = URL(string :phno) else { return }
+        showAlert(message: phno, title: "Want to Call", arrofBtnTitles: ["Ok","Cancel"], type: .alert, phoneURL: phoneurl)
+
         }
     }
 
