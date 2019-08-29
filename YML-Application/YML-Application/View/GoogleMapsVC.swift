@@ -10,7 +10,6 @@ class GoogleMapsVC: UIViewController {
 
         let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: lat, longitude: long, zoom: 7.0)
         mapView.camera = camera
-        
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: lat, longitude: long)
         marker.map = mapView

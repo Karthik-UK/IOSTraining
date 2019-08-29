@@ -14,10 +14,10 @@ class BaseVC: UIViewController,MFMailComposeViewControllerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    func getURL(EnteredString : String){
-        if let url = URL(string: EnteredString)
-         {return }
-    }
+//    func getURL(EnteredString : String){
+//        if let url = URL(string: EnteredString)
+//         {return }
+//    }
     
     @objc func sendEmail(_ sender: UITapGestureRecognizer)
         {

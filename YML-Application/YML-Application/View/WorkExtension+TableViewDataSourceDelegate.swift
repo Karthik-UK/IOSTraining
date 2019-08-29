@@ -12,7 +12,7 @@ extension WorkVC : UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let webViewController = self.storyboard?.instantiateViewController(withIdentifier: String(describing: "WebVC")) as! WebVC
+        guard let webViewController = self.storyboard?.instantiateViewController(withIdentifier: String(describing: "WebVC")) as? WebVC else { return }
         webViewController.url = URL(string: workTab.workInform[indexPath.row].workurl)
         self.navigationController?.pushViewController(webViewController, animated: true)
         

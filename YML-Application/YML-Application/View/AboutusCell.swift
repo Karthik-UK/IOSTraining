@@ -9,11 +9,13 @@
 import UIKit
 
 class AboutusCell: BaseVCCell {
+    let aboutusModel =  AboutVm()
+    @IBOutlet weak var imageOutlet: UIImageView!   
 
-    @IBOutlet weak var imageOutlet: UIImageView!
     
     
-    }
     
-
+    
+    
+}
 

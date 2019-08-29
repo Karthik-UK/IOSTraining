@@ -19,6 +19,6 @@ class NewsVC: BaseVC {
         super.viewDidLoad()
         newsTableView.separatorColor = .black
         newsModel.getFeatured()
-        //dosomething()
+
     }
 }
