@@ -6,10 +6,6 @@ class ViewController: BaseVC{
     var storyModel = WalkThroughVM()
     override func viewDidLoad() {
         super.viewDidLoad()
-//        var c = AlertStruct.init(title: "fgch", message: "fgfg")
-//       
-//
-//        self.present( ShowAlert(title: c.title, message: c.message), animated: false, completion: nil)
         buttonUI.layer.borderWidth = 2
         buttonUI.layer.borderColor = UIColor.black.cgColor
         storyModel.page()

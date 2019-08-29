@@ -36,17 +36,30 @@ class ContactVC: BaseVC {
         }
         let appleMaps = AlertAction(title: "AppleMaps", style: .default, handler: {
             (AlertAction) in
-            
+            let request = "?daddr=\(self.contact.searchAddress.0 )),\(self.contact.searchAddress.1)"
+                let mapURL = "http://maps.apple.com/\(request)&dirflg=d&t=h"
+                if let url = URL(string: mapURL){
+                    if UIApplication.shared.canOpenURL(url){
+                        UIApplication.shared.open(url)
+                    }
+                }
+            })
+        let googleMaps = AlertAction(title: "Google Maps", style: .default, handler: {
+            (AlertAction) in
+             let request = "\(self.contact.searchAddress.0 )),\(self.contact.searchAddress.1)"
+            let mapURL = "comgooglemaps://?saddr=&daddr=\(request))&directionsmode=driving"
+            print(mapURL)
+            if let url = URL(string: mapURL){
+                if UIApplication.shared.canOpenURL(url){
+                    UIApplication.shared.open(url)
+                }
+            }
         })
-        showAlert(message: "Choose 1", title: " ", type: .actionSheet, Action: [appleMaps,AlertAction(title: "Googleamaps", style: .default, handler: nil)])
+        let goback = AlertAction(title: "Cancel", style: .cancel, handler: nil)
+            
         
-        
-        if let webViewController = self.storyboard?.instantiateViewController(withIdentifier: String(describing: "GoogleMapsVC")) as? GoogleMapsVC
-        {
-            webViewController.lat = contact.searchAddress.0
-            webViewController.long = contact.searchAddress.1
-            self.navigationController?.pushViewController(webViewController, animated: true)
-        }
+        showAlert(message: "Pick", title: "Any One", type: .actionSheet, Action: [appleMaps,googleMaps,goback])
+  
     }
 
     @objc func actionTapped(_ sender: UITapGestureRecognizer) {
