@@ -1,22 +1,18 @@
 import UIKit
 import MessageUI
 
-struct  BtnAction {
-    let title: String?
-    let actionType : ActionType
+struct  AlertAction {
+    var title: String?
+    var style : UIAlertAction.Style
+    var handler :((UIAlertAction)->Void)?
 }
 
-enum ActionType: Int {
-    case phone
-    case email
-    case noAction
-}
+
 
 class BaseVC: UIViewController,MFMailComposeViewControllerDelegate{
     let id = "karthik.uk@ymedialabs.com"
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     func getURL(EnteredString : String){
         if let url = URL(string: EnteredString)
@@ -37,67 +33,21 @@ class BaseVC: UIViewController,MFMailComposeViewControllerDelegate{
         }
         func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
-       // showAlert(message: "Mail", title: id, arrofBtns: ["Ok", "Error"], type: .alert)
+            showAlert(message: "Mail", title: "To", type: .alert, Action: [AlertAction(title:"yes",style: .default ,handler: nil),AlertAction(title: "no", style: .cancel, handler: nil)])
         }
+
     
     
-    
-    func showAlert( message: String, title : String, arrofBtns: [BtnAction], type : UIAlertController.Style, phonenumber : String? = nil, Action :ActionType? = nil) {
-    
-        // title , message , btn titles , btn actions, Handling
-        // title -static , message - static
-        // title - general - msg - general
-        // btn titles - general
-        // Why we went with CustomAction instead of UIAlertAction
-        // actionstype -generalised
-        
-        // Handling
-        // Parameters for Action - yet to implement
+    func showAlert( message: String, title : String, type : UIAlertController.Style, Action :[AlertAction]) {
+
         let alert = UIAlertController(title: title, message: message, preferredStyle: type)
         
-        for button in arrofBtns {
-            let customAction = CustomAction(title: button.title, style: UIAlertAction.Style.default, handler: { [weak self] (action) in
-                guard let weakSelf = self else { return }
-                    if let custom = action as? CustomAction {
-                        weakSelf.doAction(type: custom.btnType)
-                    }
-                
-                })
-            customAction.btnType = button.actionType
-            alert.addAction(customAction)
-//            alert.addAction(UIAlertAction(title: btnTitle, style: UIAlertAction.Style.default, handler: { (action) in
-//
-//
-//                guard let number = URL(string: Action!.rawValue + phonenumber! ) else { return }
-//                if UIApplication.shared.canOpenURL(number) == true{
-//                UIApplication.shared.open(number)
-//                }
-//            }))
-            
+        for item in Action {
+            alert.addAction(UIAlertAction(title: item.title, style: item.style, handler: item.handler)
+            )
+ 
         }
         self.present(alert, animated: true, completion: nil)
-    }
-    
-    func doAction(type: ActionType?) {
-        debugPrint("Action \(type)")
-        switch type! {
-        case .phone:
-            guard let number = URL(string: "tel://" + "34748734873487" ) else { return }
-            if UIApplication.shared.canOpenURL(number) == true{
-                    UIApplication.shared.open(number)
-            }
-        case .email:
-            debugPrint("Email")
-        case .noAction:
-            debugPrint("No Action")
-        }
-    }
-    
-    class CustomAction : UIAlertAction {
-        var btnType: ActionType?
-        override init() {
-            super.init()
-        }
     }
 
 }

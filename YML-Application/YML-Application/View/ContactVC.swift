@@ -1,4 +1,5 @@
 import UIKit
+import MapKit
 import MessageUI
 import GoogleMaps
 class ContactVC: BaseVC {
@@ -33,6 +34,9 @@ class ContactVC: BaseVC {
         else{
             contact.searchAddress = contact.address1
         }
+        showAlert(message: "Choose 1", title: " ", type: .actionSheet, Action: [AlertAction(title:"AppleMaps",style: .default ,handler: nil),AlertAction(title: "Googleamaps", style: .default, handler: nil)])
+        
+        
         if let webViewController = self.storyboard?.instantiateViewController(withIdentifier: String(describing: "GoogleMapsVC")) as? GoogleMapsVC
         {
             webViewController.lat = contact.searchAddress.0
@@ -43,11 +47,35 @@ class ContactVC: BaseVC {
 
     @objc func actionTapped(_ sender: UITapGestureRecognizer) {
         let phno = "8152024536"
-        showAlert(message: phno, title: "Want to Call", arrofBtns: [BtnAction(title: "Ok", actionType: .phone) , BtnAction(title: "Cancel", actionType: .noAction)], type: .alert,phonenumber: phno,Action: .phone)
+        openApp(str: phno, appType: .phone)
+        self.showAlert(message: "Want to Call", title: phno, type: .alert, Action: [AlertAction(title:"Cancel",style: .cancel ,handler: nil),AlertAction(title: "Call", style: .default, handler: nil)])
 
         }
     }
 
+extension ContactVC{
+    func openApp(str :String ,appType :AppType){
+    var urlstring = str
+    switch appType{
+    case .phone:
+        urlstring = "tel://" + urlstring
 
+    case .email:
+        print("none")
+    case .noAction:
+        print("none")
+    }
+        if let url = URL(string: str){
+            if UIApplication.shared.canOpenURL(url) == true
+            {UIApplication.shared.open(url)
+            }}
+    }
+    enum AppType: Int {
+        case phone
+        case email
+        case noAction
+    }
+    
+}
 
 
