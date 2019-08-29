@@ -34,7 +34,11 @@ class ContactVC: BaseVC {
         else{
             contact.searchAddress = contact.address1
         }
-        showAlert(message: "Choose 1", title: " ", type: .actionSheet, Action: [AlertAction(title:"AppleMaps",style: .default ,handler: nil),AlertAction(title: "Googleamaps", style: .default, handler: nil)])
+        let appleMaps = AlertAction(title: "AppleMaps", style: .default, handler: {
+            (AlertAction) in
+            
+        })
+        showAlert(message: "Choose 1", title: " ", type: .actionSheet, Action: [appleMaps,AlertAction(title: "Googleamaps", style: .default, handler: nil)])
         
         
         if let webViewController = self.storyboard?.instantiateViewController(withIdentifier: String(describing: "GoogleMapsVC")) as? GoogleMapsVC
